@@ -61,10 +61,27 @@
         "background_image": "shopify:\/\/shop_images\/our-brand-bg.png",
         "heading": "SHOP BY BRAND"
       }
+    },
+    "1658318602404bc34b": {
+      "type": "index-collections",
+      "settings": {
+        "collection_1_image": "shopify:\/\/shop_images\/performance-glove.png",
+        "heading_1_text": "GLOVES",
+        "subheading_1_text": "PERFORMANCE",
+        "button_1_text": "VIEW GLOVES",
+        "button_1_url": "",
+        "collection_2_image": "shopify:\/\/shop_images\/divot-tools.png",
+        "heading_2_text": "DIVOT TOOLS",
+        "button_2_url": "",
+        "collection_3_image": "shopify:\/\/shop_images\/shop-tees.png",
+        "heading_3_text": "SHOP TEES",
+        "button_3_url": ""
+      }
     }
   },
   "order": [
     "1658311101c291dbbc",
-    "16583172155ef8bc56"
+    "16583172155ef8bc56",
+    "1658318602404bc34b"
   ]
 }
