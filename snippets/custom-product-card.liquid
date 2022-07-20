@@ -1,13 +1,13 @@
 <div class="col-md-3">
     <div class="featured-product-col">
         <div class="featured-product-img">
-            <img loading="lazy" alt="{{ product.title }}" src="{{ product.featured_image |  img_url: 'master' }}">
+            <img loading="lazy" alt="{{ card_product.title }}" src="{{ card_product.featured_image |  img_url: 'master' }}">
             <span class="sale-product"><img loading="lazy" alt="sale-badge" src="{{ 'sale-product.png' | asset_img_url: 'master' }}"></span>
     
         </div>
         <div class="featured-product-content">
-            <h5> {{ product.title }} </h5>
-            <span> {{ product.metafields.descriptors.subtitle }} </span>
+            <h5> {{ card_product.title }} </h5>
+            <span> {{ card_product.metafields.descriptors.subtitle }} </span>
             <form>
                 <div class="input-price-row">
                     <div class="radio-container">
