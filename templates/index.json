@@ -82,7 +82,7 @@
       "type": "index-featured-collection",
       "settings": {
         "heading": "Featured Collection",
-        "golf_collection": ""
+        "golf_collection": "golf-balls"
       }
     }
   },
