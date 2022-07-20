@@ -2,12 +2,16 @@
   <div class="announcment-bar">
     <div class="container">
       <div class="announcment-bar-flex">
-        <p>Free shipping on eligible items over $89</p>
+        <p>{{ section.settings.promo_text }}</p>
         <div class="header-account">
           <ul>
-            <li><a href="#"><img src="assets/images/user.png">LOGIN</a></li>
+            <li>
+              <a href="#"><img src="assets/images/user.png">LOGIN</a>                    
+            </li>
             <li><a href="#"><img src="assets/images/shopping-cart.png">CART</a></li>
-            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+            {% if settings.social_facebook_link != blank %}
+            <li><a href="{{ settings.social_facebook_link }}"><i class="fab fa-facebook-f"></i></a></li>
+            {% endif %}
           </ul>
         </div>
       </div>
@@ -17,22 +21,25 @@
     <div class="container">
       <div class="main-header-flex">
         <div class="logo">
-          <a href="#"><img src="assets/images/logo.png" alt="logo"></a>
+          <a href="{{ routes.root_url }}">
+            {% if section.settings.logo != blank %}
+            <img src="{{section.settings.logo | img_url: 'master'}}" loading="lazy" alt="{{ shop.name }}">
+            {% else %}
+             <span class="h2">{{ shop.name }}</span>
+            {% endif %}
+          </a>
         </div>
         <div class="navigation">
           <ul>
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#">Golf Balls</a></li>
-            <li><a href="#">Accessories</a></li>
-            <li><a href="#">Grading Scale</a></li>
-            <li><a href="#">We Buy Balls</a></li>
-            <li><a href="#">Contact Us</a></li>
+            {% for link in linklists[section.settings.main_menu].links %}
+               <li class="{% if link.active %}active{% endif %}"><a href="{{ link.url }}">{{ link.title }}</a></li>
+            {% endfor %}
           </ul>
         </div>
         <div class="search-container">
-          <form>
+          <form role="search" action="{{ routes.search_url }}">
             <div class="input-search">
-              <input type="search" placeholder="Search">
+              <input type="search" name="q" value="{{ search.terms }}" placeholder="Search">
               <button type="submit"><i class="fas fa-search"></i></button>
             </div>
           </form>
@@ -43,8 +50,35 @@
 </header>
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Header",
+    "settings": 
+    [
+        {
+            "type": "header",
+            "content": "Top Header"
+        },
+       {
+        "type": "text",
+        "id": "promo_text",
+        "label": "Promo Text",
+        "default": "Free shipping on eligible items over $89"
+       },
+        {
+          "type": "header",
+          "content": "Main Header"
+        },
+       {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo"
+       },
+      {
+        "type": "link_list",
+        "id": "main_menu",
+        "label": "Main Menu"
+      }
+
+    ]
   }
 {% endschema %}
 
