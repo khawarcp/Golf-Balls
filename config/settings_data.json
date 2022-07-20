@@ -197,6 +197,20 @@
           "logo": "shopify:\/\/shop_images\/logo.png",
           "main_menu": "main-menu"
         }
+      },
+      "footerNew": {
+        "type": "footerNew",
+        "settings": {
+          "footer_logo": "shopify:\/\/shop_images\/footer-logo.png",
+          "address": "914  9th Street<br> Lake View, Iowa 51450, USA",
+          "phone_no": "800-238-8679",
+          "menu_1": "EXPLORE",
+          "menu_1_links": "",
+          "menu_2": "SERVICE",
+          "menu_2_links": "",
+          "menu_3": "WHOLESALE",
+          "menu_3_links": ""
+        }
       }
     },
     "content_for_index": [
