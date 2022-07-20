@@ -1,0 +1,101 @@
+<section class="three-products-collection">
+    <div class="container">
+        <div class="three-products-row">
+            <div class="performance-gloves" loading="lazy" style="background-image: url('{{ section.settings.collection_1_image | img_url : 'master' }}')">
+                <h3> {{ section.settings.subheading_1_text }} </h3>
+                <h2> {{ section.settings.heading_1_text }}  <i class="fas fa-angle-right"></i></h2>
+                <a href="{{ section.settings.button_1_url }}"> {{ section.settings.button_1_text }} </a>
+            </div>
+            <div class="divot-teels-container">
+                <a href="{{ section.settings.button_2_url }}" class="divot-tools" loading="lazy" style="background-image: url('{{ section.settings.collection_2_image | img_url : 'master' }}');">
+                    <h2>{{ section.settings.heading_2_text }} <i class="fas fa-angle-right"></i></h2>
+                </a>
+                <a href="{{ section.settings.button_3_url }}" class="divot-tools shop-tees" loading="lazy"
+                    style="background-image: url('{{ section.settings.collection_3_image | img_url : 'master' }}')">
+                    <h2>{{ section.settings.heading_2_text }} <i class="fas fa-angle-right"></i></h2>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+   "name": "Three Collections",
+    "settings":
+    [
+        {
+           "type": "header",
+           "content": "Collections 1"
+        },
+       {
+        "type": "image_picker",
+        "id": "collection_1_image",
+        "label": "Image"
+       },    
+       {
+        "type": "text",
+        "id": "heading_1_text",
+        "label": "Heading",
+        "default": "GLOVES"
+       },
+       {
+        "type": "text",
+        "id": "subheading_1_text",
+        "label": "Subheading",
+        "default": "PERFORMANCE"
+       },
+       {
+        "type": "text",
+        "id": "button_1_text",
+        "label": "Button Text",
+        "default": "VIEW GLOVES"
+       },
+       {
+        "type": "url",
+        "id": "button_1_url",
+        "label": "URL"
+       },
+       {
+            "type": "header",
+            "content": "Collections 2"
+        },
+        {
+            "type": "image_picker",
+            "id": "collection_2_image",
+            "label": "Image"
+        },    
+        {
+            "type": "text",
+            "id": "heading_2_text",
+            "label": "Heading",
+            "default": "DIVOT TOOLS "
+        },
+        {
+            "type": "url",
+            "id": "button_2_url",
+            "label": "URL"
+        },
+        {
+             "type": "header",
+             "content": "Collections 3"
+         },
+         {
+             "type": "image_picker",
+             "id": "collection_3_image",
+             "label": "Image"
+         },    
+         {
+             "type": "text",
+             "id": "heading_3_text",
+             "label": "Heading",
+             "default": "SHOP TEES"
+         },
+         {
+             "type": "url",
+             "id": "button_3_url",
+             "label": "URL"
+         }
+    ]
+}
+{% endschema %}
