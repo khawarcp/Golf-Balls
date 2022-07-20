@@ -84,12 +84,50 @@
         "heading": "Featured Collection",
         "golf_collection": "golf-balls"
       }
+    },
+    "1658325848dc921104": {
+      "type": "index-shop-balls",
+      "blocks": {
+        "ae11f8b3-7707-4c43-b169-97b6946ea04e": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/golf-ball-grades.png",
+            "title": "GOLF BALL GRADES",
+            "url": ""
+          }
+        },
+        "92d7ccdb-56e2-410c-8418-6443fdabf34e": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/shop-accessories.png",
+            "title": "SHOP ACCESSORIES",
+            "url": ""
+          }
+        },
+        "274dd64d-df50-4cde-a8bf-9cb2e801a7ff": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/shop-accessories.png",
+            "title": "SELL YOUR GOLF BALLS",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "ae11f8b3-7707-4c43-b169-97b6946ea04e",
+        "92d7ccdb-56e2-410c-8418-6443fdabf34e",
+        "274dd64d-df50-4cde-a8bf-9cb2e801a7ff"
+      ],
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/green-bar.png"
+      }
     }
   },
   "order": [
     "1658311101c291dbbc",
     "16583172155ef8bc56",
     "1658318602404bc34b",
-    "1658324595693814ee"
+    "1658324595693814ee",
+    "1658325848dc921104"
   ]
 }
