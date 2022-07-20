@@ -1,0 +1,71 @@
+<section class="our-brands" loading="lazy" style="background-image: url('{{ section.settings.background_image | img_url : 'master' }}')">
+    <div class="container">
+        <div class="our-brands-row">
+            <div class="our-brand-title">
+                <h5> {{ section.settings.heading }}  <img src="{{ 'our-brand-arrow.png' | asset_img_url: 'master' }}" loading="lazy" alt="our-brand-arrow"></h5>
+            </div>
+            <div class="our-brands-logos-row">
+                {% for block in section.blocks %}                    
+                <div class="brand-logo">
+                    {% if block.settings.brand_url != blank %}                        
+                    <a href="{{ block.settings.brand_url }}"> 
+                    {% endif %}
+                        {% if block.settings.brand_image != blank %}
+                        <img src="{{ block.settings.brand_image | img_url: 'master' }}" loading="lazy" alt="{{ block.settings.brand_image.alt }}">
+                        {% endif %}
+                     {% if block.settings.brand_url != blank %}      
+                     </a>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+   "name": "Brands",
+  "settings":
+  [
+      {
+        "type": "image_picker",
+        "id": "background_image",
+        "label": "Background Image"
+      },
+        {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+            "default": "SHOP BY BRAND"
+        }
+  ],
+  "blocks" :
+  [
+        {
+           "name": "Brand",
+           "type" : "brand",
+           "settings":
+           [
+               {
+                   "type": "image_picker",
+                   "id": "brand_image",
+                   "label": "Image"
+               },
+               {
+                   "type": "url",
+                   "id": "brand_url",
+                   "label": "URL"
+               }
+           ]
+        }
+  ],
+  "presets":
+  [ 
+        {
+           "name": "Brands",
+           "category" : "Custom Sections"
+        }
+  ]
+}
+{% endschema %}
