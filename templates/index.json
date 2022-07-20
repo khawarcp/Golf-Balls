@@ -10,9 +10,61 @@
         "banner_button_text": "START SHOPPING",
         "banner_button_link": ""
       }
+    },
+    "16583172155ef8bc56": {
+      "type": "index-brands",
+      "blocks": {
+        "bc1189c8-25a2-410b-859d-66a4bc3918a8": {
+          "type": "brand",
+          "settings": {
+            "brand_image": "shopify:\/\/shop_images\/our-brand-img1.png",
+            "brand_url": ""
+          }
+        },
+        "c219af3f-7f4a-44ec-a913-93ef0f202011": {
+          "type": "brand",
+          "settings": {
+            "brand_image": "shopify:\/\/shop_images\/our-brand-img2.png",
+            "brand_url": ""
+          }
+        },
+        "1855ef54-f4b6-4999-8c92-ee110184b090": {
+          "type": "brand",
+          "settings": {
+            "brand_image": "shopify:\/\/shop_images\/our-brand-img3.png",
+            "brand_url": ""
+          }
+        },
+        "9ed6f1da-b3d2-4f1a-bf51-9ec2b3e58131": {
+          "type": "brand",
+          "settings": {
+            "brand_image": "shopify:\/\/shop_images\/our-brand-img4.png",
+            "brand_url": ""
+          }
+        },
+        "60043477-c3cc-49bb-a12c-5a7f6698cfc0": {
+          "type": "brand",
+          "settings": {
+            "brand_image": "shopify:\/\/shop_images\/our-brand-img5.png",
+            "brand_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "bc1189c8-25a2-410b-859d-66a4bc3918a8",
+        "c219af3f-7f4a-44ec-a913-93ef0f202011",
+        "1855ef54-f4b6-4999-8c92-ee110184b090",
+        "9ed6f1da-b3d2-4f1a-bf51-9ec2b3e58131",
+        "60043477-c3cc-49bb-a12c-5a7f6698cfc0"
+      ],
+      "settings": {
+        "background_image": "shopify:\/\/shop_images\/our-brand-bg.png",
+        "heading": "SHOP BY BRAND"
+      }
     }
   },
   "order": [
-    "1658311101c291dbbc"
+    "1658311101c291dbbc",
+    "16583172155ef8bc56"
   ]
 }
