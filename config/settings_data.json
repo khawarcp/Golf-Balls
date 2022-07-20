@@ -84,7 +84,7 @@
     "sold_out_badge_color_scheme": "inverse",
     "accent_icons": "text",
     "social_twitter_link": "",
-    "social_facebook_link": "",
+    "social_facebook_link": "https:\/\/facebook.com\/shopify",
     "social_pinterest_link": "",
     "social_instagram_link": "",
     "social_tiktok_link": "",
@@ -196,6 +196,20 @@
           "promo_text": "Free shipping on eligible items over $89",
           "logo": "shopify:\/\/shop_images\/logo.png",
           "main_menu": "main-menu"
+        }
+      },
+      "footerNew": {
+        "type": "footerNew",
+        "settings": {
+          "footer_logo": "shopify:\/\/shop_images\/footer-logo.png",
+          "address": "914  9th Street<br> Lake View, Iowa 51450, USA",
+          "phone_no": "800-238-8679",
+          "menu_1": "EXPLORE",
+          "menu_1_links": "explore",
+          "menu_2": "SERVICE",
+          "menu_2_links": "footer",
+          "menu_3": "WHOLESALE",
+          "menu_3_links": "wholesale"
         }
       }
     },
