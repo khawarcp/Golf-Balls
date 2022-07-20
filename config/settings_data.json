@@ -189,8 +189,19 @@
         "settings": {
           "color_scheme": "background-1"
         }
+      },
+      "new-header": {
+        "type": "new-header",
+        "settings": {
+          "promo_text": "Free shipping on eligible items over $89",
+          "logo": "shopify:\/\/shop_images\/logo.png",
+          "main_menu": "main-menu"
+        }
       }
-    }
+    },
+    "content_for_index": [
+
+    ]
   },
   "presets": {
     "Default": {
