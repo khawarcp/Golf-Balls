@@ -1,0 +1,60 @@
+<div class="col-md-3">
+    <div class="featured-product-col">
+        <div class="featured-product-img">
+            <img loading="lazy" alt="{{ product.title }}" src="{{ product.featured_image |  img_url: 'master' }}">
+            <span class="sale-product"><img loading="lazy" alt="sale-badge" src="{{ 'sale-product.png' | asset_img_url: 'master' }}"></span>
+    
+        </div>
+        <div class="featured-product-content">
+            <h5> {{ product.title }} </h5>
+            <span> {{ product.metafields.descriptors.subtitle }} </span>
+            <form>
+                <div class="input-price-row">
+                    <div class="radio-container">
+                        <label>
+                            <input type="radio" checked="checked" name="radio">
+                            Mint (5A)
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="fearured-price">
+                        <h6 class="del-price">$24.99</h6>
+                        <h6 class="discount-price">$22.99</h6>
+                    </div>
+                </div>
+                <div class="input-price-row">
+                    <div class="radio-container">
+                        <label>
+                            <input type="radio" name="radio">
+                            Near Mint (4A)
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="fearured-price">
+                        <h6 class="del-price">$19.99</h6>
+                        <h6 class="discount-price">$15.99</h6>
+                    </div>
+                </div>
+                <div class="input-price-row">
+                    <div class="radio-container">
+                        <label>
+                            <input type="radio" name="radio">
+                            Good (3A)
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="fearured-price">
+                        <h6 class="del-price">$17.99</h6>
+                        <h6 class="discount-price">$14.99</h6>
+                    </div>
+                </div>
+                <div class="count-add-to-cart">
+                    <input type="number" value="1">
+                    <button class="custom-site-btn">
+                        ADD TO CART
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
