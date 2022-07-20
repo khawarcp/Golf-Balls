@@ -1,0 +1,67 @@
+<section class="shop-golf-balls" loading="lazy" style="background-image: url('{{ section.settings.background_image | img_url : 'master' }}');">
+    <div class="container">
+        <div class="row">
+            {% for block in section.blocks %}                
+            <div class="col-md-4">
+                <div class="golfball-col" loading="lazy" style="background-image: url('{{ block.settings.image | img_url : 'master' }}');">
+                    <h2> 
+                        {% if block.settings.url != blank %}                            
+                        <a href="{{ block.settings.url }}"> 
+                        {% endif %}
+                             {{ block.settings.title }} 
+                        {% if block.settings.url != blank %}    
+                          </a>
+                        {% endif %} 
+                    </h2>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+   "name": "Shop Golf Balls",
+  "settings": 
+    [
+         {
+                    "type": "image_picker",
+                    "id": "background_image",
+                    "label": "Background Image"
+            }
+    ],
+    "blocks":
+    [
+        {
+           "name": "Banner",
+           "type": "banner",
+            "limit" : 3,
+           "settings":
+           [
+               {
+                    "type": "image_picker",
+                    "id": "image",
+                    "label": "Image"
+               },
+               {
+                 "type": "text",
+                 "id": "title",
+                 "label": "Title"
+               },
+              {
+                "type": "url",
+                "id": "url",
+                "label": "URL"
+              }
+           ]
+        }    
+    ],
+    "presets": [
+        {
+            "name": "Shop Golf Balls",
+            "category": "Custom Sections"
+        }
+    ]   
+}
+{% endschema %}
