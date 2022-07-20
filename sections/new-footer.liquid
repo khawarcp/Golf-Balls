@@ -1,0 +1,117 @@
+<footer>
+    <div class="container">
+        <div class="footer-row">
+            <div class="footer-logo-col">
+                 <a href="{{ routes.root_url }}" class="footer-logo">
+                    {% if section.settings.logo != blank %}
+                    <img src="{{section.settings.logo | img_url: 'master'}}" loading="lazy" alt="{{ shop.name }}">
+                    {% else %}
+                    <span class="h2">{{ shop.name }}</span>
+                    {% endif %}
+                 </a>
+                 
+                 {% if section.settings.address != blank %}                    
+                 <h6> {{ section.settings.address }}</h6>
+                 {% endif %}
+                
+                 {% if section.settings.phone_no != blank %}                    
+                 <a href="tel:{{ section.settings.phone_no }}" class="f-phone-no">{{ section.settings.phone_no }}</a>
+                 {% endif %}
+            </div>
+            <div class="quicks-links">
+                <h5>{{ section.settings.menu_1 }}</h5>
+                <ul>
+                    {% for link in linklists[section.settings.menu_1_links].links %}
+                        <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="quicks-links">
+                <h5>{{ section.settings.menu_2 }}</h5>
+                <ul>
+                    {% for link in linklists[section.settings.menu_2_links].links %}
+                        <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="quicks-links">
+                <h5>{{ section.settings.menu_3 }}</h5>
+                <ul>
+                    {% for link in linklists[section.settings.menu_3_links].links %}
+                        <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="quicks-links">
+                {% if settings.social_facebook_link != blank %}
+                <h5>LET’S CONNECT<a href="{{ settings.social_facebook_link }}"> <i class="fab fa-facebook-f"></i></a></h5>
+                {% endif %}
+            </div>
+        </div>
+        <p class="f-copywrite">&copy; {{ 'now' |  date : '%Y' }} All Right Reserved</p>
+    </div>
+</footer>
+
+{% schema %}
+{
+    "name": "Footer",
+    "settings": 
+    [
+       {
+        "type": "image_picker",
+        "id": "footer_logo",
+        "label": "Logo"
+       },
+      {
+        "type": "text",
+        "id": "address",
+        "label": "Address",
+        "default": "914  9th Street<br>
+        Lake View, Iowa 51450, USA"
+      },
+       {
+        "type": "text",
+        "id": "phone_no",
+        "label": "Phone No",
+        "default": "800-238-8679"
+       },
+      {
+        "type": "header",
+        "content": "Footer Menus"
+      },
+       {
+        "type": "text",
+        "id": "menu_1",
+        "label": "Heading",
+        "default": "EXPLORE"
+       },
+      {
+        "type": "link_list",
+        "id": "menu_1_links",
+        "label": "Menu"
+      },
+       {
+        "type": "text",
+        "id": "menu_2",
+        "label": "Heading",
+        "default": "SERVICE"
+       },
+       {
+         "type": "link_list",
+         "id": "menu_2_links",
+         "label": "Menu"
+       },
+       {
+        "type": "text",
+        "id": "menu_3",
+        "label": "Heading",
+        "default": "WHOLESALE"
+       },
+       {
+         "type": "link_list",
+         "id": "menu_3_links",
+         "label": "Menu"
+       }
+    ]
+}
+{% endschema %}
