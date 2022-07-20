@@ -77,11 +77,19 @@
         "heading_3_text": "SHOP TEES",
         "button_3_url": ""
       }
+    },
+    "1658324595693814ee": {
+      "type": "index-featured-collection",
+      "settings": {
+        "heading": "Featured Collection",
+        "golf_collection": ""
+      }
     }
   },
   "order": [
     "1658311101c291dbbc",
     "16583172155ef8bc56",
-    "1658318602404bc34b"
+    "1658318602404bc34b",
+    "1658324595693814ee"
   ]
 }
