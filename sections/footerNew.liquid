@@ -3,8 +3,8 @@
         <div class="footer-row">
             <div class="footer-logo-col">
                  <a href="{{ routes.root_url }}" class="footer-logo">
-                    {% if section.settings.logo != blank %}
-                    <img src="{{section.settings.logo | img_url: 'master'}}" loading="lazy" alt="{{ shop.name }}">
+                    {% if section.settings.footer_logo != blank %}
+                    <img src="{{ section.settings.footer_logo | img_url: 'master'}}" loading="lazy" alt="{{ shop.name }}">
                     {% else %}
                     <span class="h2">{{ shop.name }}</span>
                     {% endif %}
