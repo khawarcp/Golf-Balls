@@ -1009,5 +1009,23 @@ p.f-copywrite {
 }
 .overflow {
     overflow: hidden;
+}
+.menu-bar.active span:nth-child(2) {
+    display: none;
+}
+
+.menu-bar.active span:nth-child(1) {
+    transform: rotate(45deg);
+}
+
+.menu-bar.active span:nth-child(3) {
+    transform: rotate(-45deg);
+    position: relative;
+    top: -9px;
+}
+
+.menu-bar.active {
+    top: 4px;
+    position: relative;
 }  
 }
