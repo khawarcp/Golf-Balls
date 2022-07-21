@@ -12,7 +12,7 @@
                             <h6> {{ section.settings.subheading}} </h6>
                             {% endif %}
                             {% if section.settings.address != blank %}                              
-                            <span> {{ section.settings.address }} </span>
+                            <span> {{ section.settings.address | newline_to_br }} </span>
                             {% endif %}
                           </li>
                           <li>
