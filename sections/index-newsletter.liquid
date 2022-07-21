@@ -1,0 +1,73 @@
+<section class="newsletter-sec" style="background-image: url('assets/images/newsletter-bg.png');">
+    <div class="container">
+        <div class="newsletter-content-row">
+            <div class="newsletter-title-col">
+                <h3> {{ section.settings.heading }} </h3>
+                <h5>{{ section.settings.subheading }}</h5>
+            </div>
+            {% form 'customer' %}
+            <div class="newsletter-form">
+                <input type="hidden" name="contact[tags]" value="newsletter">
+                <div class="input-field">
+                    <input type="text" name="contact[name]" id="NewsletterForm-Name-{{ section.id }}" value="{% if customer %}{{customer.name}}{{ form.name }}{% else %}{% endif %}" placeholder="Name">
+                </div>
+                <div class="input-field">
+                    <input type="email" placeholder="Email"
+                    id="NewsletterForm--{{ section.id }}"
+                    name="contact[email]"                   
+                    value="{{ form.email }}"
+                    aria-required="true"
+                    autocorrect="off"
+                    autocapitalize="off"
+                    autocomplete="email"
+                    {% if form.errors %}
+                      autofocus
+                      aria-invalid="true"
+                      aria-describedby="Newsletter-error--{{ section.id }}"
+                    {% elsif form.posted_successfully? %}
+                      aria-describedby="Newsletter-success--{{ section.id }}"
+                    {% endif %}
+                    required>
+                </div>
+                <div class="input-field-submit">
+                    <input type="submit" value="ENROLL">
+                </div>            
+            </div>
+            {%- if form.errors -%}
+                  <small class="newsletter-form__message form__message" id="Newsletter-error--{{ section.id }}">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
+            {%- endif -%}
+            {%- if form.posted_successfully? -%}
+                <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="Newsletter-success--{{ section.id }}" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
+              {%- endif -%}
+            {% endform %}
+        </div>
+    </div>
+</section>
+
+{% schema %}
+{
+    "name" : "Newsletter",
+    "settings":
+    [
+        {
+            "type": "text",
+            "id": "heading",
+            "default": "SIGN UP TO GET UPDATES",
+            "label": "Heading"
+        },
+        {
+            "type": "text",
+            "id": "subheading",
+            "default": "Receive discounts and specials",
+            "label": "Subheading"
+        }
+    ],
+    "presets":
+    [
+        {
+            "name" : "Custom Newsletter",
+            "category": "Custom Sections"
+        }
+    ]
+}
+{% endschema %}
