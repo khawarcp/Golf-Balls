@@ -513,8 +513,7 @@ span.sale-product {
 }
 
 .count-add-to-cart ::-webkit-inner-spin-button {
-    display: block;
-    width: 15px;
+    display: none;
 }
 .input-price-row.out-of-stock {
     position: relative;
