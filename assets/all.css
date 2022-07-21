@@ -1512,5 +1512,12 @@ a.footer-logo img {
 .buy-golfball-content {
     padding-right: 0px;
     margin-bottom: 30px;
+}
+.golfball-grade-col {
+    margin-bottom: 50px;
+}
+
+.golfball-grading {
+    padding: 60px 0px 0px;
 }  
 }
