@@ -17,7 +17,7 @@
               {%- for option in card_product.options_with_values -%}
               {%- for value in option.values -%}
                 <div class="input-price-row">
-                    <div class="radio-container">
+                    <div class="radio-container" {% if current_variant.inventory_quantity < 1 %} disabled {% endif %}>
                         <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}-{{ current_variant.id }}">
                             <input type="radio"
                                    {% if forloop.first %}checked="checked"{% endif %}
@@ -25,7 +25,7 @@
                                    id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}-{{ current_variant.id }}" 
                                    name="{{ option.name }}"
                                    value="{{ value | escape }}"
-                                   {% if current_variant.inventory_quantity == 0 %} disabled {% endif %}
+                                   
                                    >
                             {{ value }}
                             <span class="checkmark"></span>
