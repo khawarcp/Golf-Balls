@@ -170,6 +170,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 0px;
 }
 .input-search button i{
     color: #fff;
