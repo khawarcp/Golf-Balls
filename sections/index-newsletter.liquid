@@ -1,4 +1,4 @@
-<section class="newsletter-sec" style="background-image: url('assets/images/newsletter-bg.png');">
+<section class="newsletter-sec" loading="lazy" style="background-image: url('{{ section.settings.background_image | img_url : 'master' }}');">
     <div class="container">
         <div class="newsletter-content-row">
             <div class="newsletter-title-col">
@@ -6,7 +6,7 @@
                 <h5>{{ section.settings.subheading }}</h5>
             </div>
             {% form 'customer' %}
-            <div class="newsletter-form">
+            <div class="newsletter-form_custom">
                 <input type="hidden" name="contact[tags]" value="newsletter">
                 <div class="input-field">
                     <input type="text" name="contact[name]" id="NewsletterForm-Name-{{ section.id }}" value="{% if customer %}{{customer.name}}{{ form.name }}{% else %}{% endif %}" placeholder="Name">
@@ -60,6 +60,11 @@
             "id": "subheading",
             "default": "Receive discounts and specials",
             "label": "Subheading"
+        },
+        {
+            "type": "image_picker",
+            "id": "background_image",
+            "label": "Background Image"
         }
     ],
     "presets":
