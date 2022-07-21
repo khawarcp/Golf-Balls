@@ -121,6 +121,13 @@
       "settings": {
         "background_image": "shopify:\/\/shop_images\/green-bar.png"
       }
+    },
+    "1658385303590c1f99": {
+      "type": "index-newsletter",
+      "settings": {
+        "heading": "SIGN UP TO GET UPDATES",
+        "subheading": "Receive discounts and specials"
+      }
     }
   },
   "order": [
@@ -128,6 +135,7 @@
     "16583172155ef8bc56",
     "1658318602404bc34b",
     "1658324595693814ee",
-    "1658325848dc921104"
+    "1658325848dc921104",
+    "1658385303590c1f99"
   ]
 }
