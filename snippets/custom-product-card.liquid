@@ -1,5 +1,6 @@
 
 {%- assign current_variant = card_product.selected_or_first_available_variant -%}
+{%- assign product_form_id = 'product-form-' | append: section.id -%}
 <div class="col-md-3">
     <div class="featured-product-col">
         <div class="featured-product-img">
@@ -10,14 +11,18 @@
         <div class="featured-product-content">
             <h5> {{ card_product.title }} </h5>
             <span> {{ card_product.metafields.descriptors.subtitle }} </span>
-            <form method="post" action="/cart/add">
+            <form method="post" action="/cart/add" id={{ product_form_id }}>
               <input type="hidden" name="id" value="{{ card_product.variants.first.id }}" />
               {%- for option in card_product.options_with_values -%}
               {%- for value in option.values -%}
                 <div class="input-price-row">
                     <div class="radio-container">
                         <label>
-                            <input type="radio" checked="checked" name="radio">
+                            <input type="radio" checked="checked" name="radio" 
+                                   id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" 
+                                   name="{{ option.name }}"
+                                   value="{{ value | escape }}"
+                                   form="{{ product_form_id }}">
                             Mint (5A)
                             <span class="checkmark"></span>
                         </label>
@@ -30,7 +35,7 @@
 				{%- endfor -%}	
               {%- endfor -%}
                 <div class="count-add-to-cart">
-                    <input type="number" autocomplete="off" id="quantity" name="quantity" min="1" value="1">
+                    <input type="number" autocomplete="off" id="quantity" name="quantity" form="{{ product_form_id }}" min="1" value="1">
                     <button type="submit" class="custom-site-btn">
                         ADD TO CART
                     </button>
