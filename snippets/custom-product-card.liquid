@@ -11,7 +11,7 @@
             <h5> {{ card_product.title }} </h5>
             <span> {{ card_product.metafields.descriptors.subtitle }} </span>
             <form method="post" action="/cart/add" id="{{ product_form_id }}">
-              <input type="hidden" name="id" value="{{ card_product.variants.first.id }}" />
+              <input type="hidden" name="id" value="{{ card_product.selected_or_first_available_variant.id }}">
                 <div class="input-price-row">
                     <div class="radio-container">
                         <label>
