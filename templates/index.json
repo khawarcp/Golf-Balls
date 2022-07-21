@@ -82,7 +82,8 @@
       "type": "index-featured-collection",
       "settings": {
         "heading": "Featured Collection",
-        "golf_collection": "golf-balls"
+        "golf_collection": "golf-balls",
+        "enable_quick_add": false
       }
     },
     "1658325848dc921104": {
