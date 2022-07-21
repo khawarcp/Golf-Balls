@@ -32,6 +32,7 @@ h1,h2,h3,h4,h5,h6 {
     font-family: 'Roboto', sans-serif;
     margin: 0px;
     color: #231f20;
+    font-weight: 700;
 }
 
 p {
@@ -173,7 +174,7 @@ img {
     color: #fff;
 }
 header {
-    box-shadow: 0px 10px 10px 0px rgb(35 31 32 / 16%);
+    box-shadow: 0px 10px 10px 0px rgb(35 31 32 / 4%);
 }
 .home-text h1 {
     font-size: 100px;
@@ -702,8 +703,212 @@ p.f-copywrite {
     color: #959595;
     margin: 0;
 }
+.buy-golfballs {
+    padding: 60px 0px;
+}
+
+.buy-golfballs h3 {
+    color: #047835;
+    margin-bottom: 15px;
+}
+
+.buy-golfball-content h4 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+.buy-golfball-form h4 {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.input-container textarea,
+.input-container input {
+    width: 100%;
+    border: 1px solid #e3e3e3;
+    outline: 0px;
+    font-size: 14px;
+    font-family: 'Roboto';
+    width: 100%;
+    padding: 6px 15px;
+    color: #231f20;
+}
+
+.buy-golfball-form-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-container {
+    width: 48%;
+    margin-bottom: 20px;
+}
+.input-container textarea::placeholder,
+.input-container input::placeholder {
+    color: #231f20;
+}
+.input-container:nth-child(4),
+.input-container:nth-child(3) {
+    width: 100%;
+}
+.buy-golfball-content p {
+    color: #3e3e3e;
+}
+
+.input-container textarea {
+    min-height: 100px;
+    resize: none;
+}
+.input-submit input {
+    border: 0px;
+}
+
+.input-submit {
+    text-align: right;
+}
+
+.buy-golfball-content {
+    padding-right: 30px;
+}
+.office-store-map-row {
+    display: flex;
+}
+
+.office-store-col ul li span {
+    display: block;
+}
+
+.office-store-col h4 {
+    margin-bottom: 15px;
+}
+
+.office-store-col ul li h6 {
+    color: #3e3e3e;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.office-store-col ul li {
+    margin-bottom: 13px;
+}
+
+.office-store-col ul li span a {
+    color: #047835;
+}
+
+.office-store-col {
+    width: 45%;
+}
+
+.store-map {
+    width: 50%;
+}
+
+.store-map iframe {
+    width: 100%;
+    height: 270px;
+}
+
+.buy-golfballs.contact-golfballs {
+    padding-bottom: 100px;
+}
+
+.golfball-grading {
+    padding: 60px 0px 100px;
+}
+
+.golfball-grading-content h3 {
+    color: #047835;
+    margin-bottom: 15px;
+}
+
+.golfball-grading-content h4 {
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.golfball-grading-content p {
+    color: #3e3e3e;
+    font-family: 'Roboto';
+}
+
+.golfball-grading-content .row {
+    margin-top: 40px;
+}
+
+.golfball-grade-img img {
+    margin: auto;
+}
+
+.golf-grade-list {
+    background-color: #047835;
+    padding: 25px 0px 10px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.golf-grade-list * {
+    color: #fff;
+    text-align: center;
+}
+
+.golf-grade-list h4 {
+    color: #ffffff;
+    position: relative;
+    padding-bottom: 12px;
+}
+
+.golf-grade-list::before {
+    content: '';
+    position: absolute;
+    top: -9px;
+    left: 0px;
+    right: 0px;
+    width: 20px;
+    height: 20px;
+    background-color: #047835;
+    transform: rotate(45deg);
+    margin: auto;
+}
+
+.golf-grade-list ul li::before,.golf-grade-list h4::before {
+    content: '';
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: #20864b;
+    width: 220px;
+    height: 1px;
+    margin: auto;
+}
+
+.golf-grade-list ul li {
+    font-size: 14px;
+    max-width: 332px;
+    margin: 0px auto;
+    position: relative;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.custom-site-btn:hover {
+    background-color: #fff;
+    color: #047835 !important;
+}
+
+.count-add-to-cart button {
+    border: 1px solid transparent;
+}
+
+.count-add-to-cart button:hover {
+    border: 1px solid #047835;
+}
+
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
     }
+}
+@media screen and (max-width:1199px){
+    
 }
