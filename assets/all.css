@@ -974,7 +974,7 @@ p.f-copywrite {
 .navigation {
     display: block;
     position: fixed;
-    left: 0px;
+    left: -100%;
     top: 0px;
     bottom: 0px;
     height: 100vh;
@@ -984,6 +984,7 @@ p.f-copywrite {
     align-items: center;
     justify-content: center;
     z-index: 99;
+    transition: 0.5s all ease;
 }
 
 .navigation ul {
@@ -1001,5 +1002,9 @@ p.f-copywrite {
 
 .navigation ul li:last-child a {
     margin-bottom: 0px;
+}
+
+.navigation.display {
+    left: 0px;
 }    
 }
