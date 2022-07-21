@@ -959,6 +959,9 @@ p.f-copywrite {
 .menu-bar span:last-child {
     margin-bottom: 0px;
 }
+.home-banner {
+    min-height: 300px;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
