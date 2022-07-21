@@ -1067,3 +1067,97 @@ h4 {
     min-height: 200px;
 }  
 }
+@media screen and (max-width:991px){
+  .home-text {
+    text-align: left;
+}
+
+img.titleist {
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+.our-brands-row {
+    flex-direction: column;
+}
+
+.our-brand-title {
+    width: 100%;
+}
+
+.our-brand-title h5 {
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+.brand-logo {
+    width: 18%;
+}
+
+.our-brands-logos-row {
+    width: 100%;
+}
+
+.divot-tools h2, .performance-gloves h2 {
+    font-size: 30px;
+}
+
+.h3, h3 {
+    font-size: 30px;
+}
+
+.performance-gloves h3 {
+    font-size: 24px;
+}
+
+.featured-product-col {
+    padding: 10px 10px 0px;
+}
+
+.featured-product-content h5 {
+    font-size: 15px;
+}
+
+.golfball-col h2 {
+    font-size: 22px;
+}
+
+.newsletter-content-row {
+    flex-direction: column;
+}
+
+.newsletter-title-col {
+    margin-right: 0px;
+    margin-bottom: 19px;
+}
+
+.newsletter-title-col {}
+
+.footer-row {
+    flex-wrap: wrap;
+}
+
+.footer-logo-col {
+    width: 30%;
+}
+
+.quicks-links {
+    width: 20%;
+}
+
+.quicks-links:last-child {
+    width: 100%;
+}
+
+footer {
+    padding: 50px 0px;
+}
+
+.newsletter-title-col h5 {
+    text-align: center;
+}
+}
