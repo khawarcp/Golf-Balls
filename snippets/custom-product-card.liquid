@@ -20,7 +20,7 @@
                 <div class="input-price-row">
                     <div class="radio-container">
                         <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-                            <input type="radio" {% if option.selected_value == value %}checked="checked"{% endif %} name="radio" 
+                            <input type="radio" checked="checked" name="radio" 
                                    id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}" 
                                    name="{{ option.name }}"
                                    value="{{ value | escape }}"
