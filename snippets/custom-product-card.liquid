@@ -6,7 +6,7 @@
         <div class="featured-product-img">
             <img loading="lazy" alt="{{ card_product.title }}" src="{{ card_product.featured_image |  img_url: 'master' }}">
           	{% if card_product.compare_at_price and card_product.available %}
-            <span class="sale-product"><img loading="lazy" alt="sale-badge" src="{{ 'sale-product.png' | asset_img_url: 'master' }}"></span>
+            <span class="sale-product" {{ card_product.price }}><img loading="lazy" alt="sale-badge" src="{{ 'sale-product.png' | asset_img_url: 'master' }}"></span>
           	{% endif %}
     		
         </div>
