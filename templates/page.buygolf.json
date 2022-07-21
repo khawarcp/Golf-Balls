@@ -1,10 +1,12 @@
 {
-    "sections" :{
-        "main" : {
-            "type" : "buygolf-content"
-        }
-    },
-    "order" : [
-        "main"
-    ]
+  "sections": {
+    "main": {
+      "type": "buygolf-content",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
 }
