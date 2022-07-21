@@ -126,7 +126,8 @@
       "type": "index-newsletter",
       "settings": {
         "heading": "SIGN UP TO GET UPDATES",
-        "subheading": "Receive discounts and specials"
+        "subheading": "Receive discounts and specials",
+        "background_image": "shopify:\/\/shop_images\/newsletter-bg.png"
       }
     }
   },
