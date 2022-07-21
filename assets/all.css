@@ -955,6 +955,11 @@ p.f-copywrite {
 .input-submit input:hover {
     border-color: #047835;
 }
+.cart-count-bubble {
+    /* display: none; */
+    left: 7px;
+    background-color: #fff;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
