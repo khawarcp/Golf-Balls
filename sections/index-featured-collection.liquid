@@ -5,7 +5,6 @@
             {% for product in collections[section.settings.golf_collection].products %}
                 {% render 'card-product', 
                 	card_product : product,
-                    lazy_load: lazy_load,
                     show_quick_add: section.settings.enable_quick_add,
                     section_id: section.id %}    
             {% endfor %}
