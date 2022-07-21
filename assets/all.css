@@ -937,7 +937,28 @@ p.f-copywrite {
 .menu-bar{
    display:none;
 }
+.menu-bar span {
+    display: block;
+    width: 30px;
+    height: 4px;
+    background-color: #047835;
+    margin-bottom: 6px;
+}
 
+.menu-bar {
+    display: flex;
+    margin-left: 15px;
+    flex-direction: column;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+}
+
+.menu-bar span:last-child {
+    margin-bottom: 0px;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
