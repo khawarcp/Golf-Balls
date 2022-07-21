@@ -3,9 +3,7 @@
         <h3> {{ section.settings.heading }} </h3>
         <div class="row">
             {% for product in collections[section.settings.golf_collection].products %}
-                {% render 'custom-product-card', card_product : product,
-                    show_quick_add: section.settings.enable_quick_add,
-                    section_id: section.id  %}    
+                {% render 'custom-product-card', card_product : product %}    
             {% endfor %}
         </div>
     </div>
@@ -26,13 +24,7 @@
         "type": "collection",
         "id": "golf_collection",
         "label": "Collection"
-       },
-    {
-      "type": "checkbox",
-      "id": "enable_quick_add",
-      "default": true,
-      "label": "t:sections.main-collection-product-grid.settings.enable_quick_buy.label"
-    }
+       }
     ],
     "presets":
     [
