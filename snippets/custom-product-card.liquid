@@ -28,7 +28,7 @@
                         </label>
                     </div>
                     <div class="fearured-price">
-                        <h6 class="del-price"> {{ current_variant.price | money }} </h6>
+                        <h6 class="{% if current_variant.compare_at_price > 0 %}del-price{% endif %}"> {{ current_variant.price | money }} </h6>
                         <h6 class="discount-price"> {{ current_variant.compare_at_price | money }} </h6>
                     </div>
                 </div>
