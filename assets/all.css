@@ -933,6 +933,9 @@ p.f-copywrite {
     height: 13px;
     margin-right: 5px;
 }
+.menu-bar{
+   display:none;
+}
 
 @media screen and (min-width:1400px){
     .container{
@@ -940,5 +943,8 @@ p.f-copywrite {
     }
 }
 @media screen and (max-width:1199px){
+  .navigation {
+    display: none;
+}
     
 }
