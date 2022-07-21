@@ -1,0 +1,10 @@
+{
+    "sections":{
+        "main" : {
+            "type" : "grading-content"
+        }
+    },
+    "order" : [
+        "main"
+    ]
+}
