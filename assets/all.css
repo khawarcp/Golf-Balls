@@ -1030,5 +1030,40 @@ p.f-copywrite {
 }
 .menu-bar span {
     transition: 0.2s all;
+}
+.brand-logo {
+    width: 15%;
+}
+
+.our-brand-title img {
+    width: 14px;
+}
+
+.home-text h1 {
+    font-size: 70px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+.h2, h2 {
+    font-size: 38px;
+}
+
+.h3, h3 {
+    font-size: 28px;
+}
+
+.featured-products .row .col-md-3 {
+    width: 33.33%;
+}
+
+.golfball-col h2 {
+    font-size: 30px;
+}
+
+.newsletter-sec {
+    min-height: 200px;
 }  
 }
