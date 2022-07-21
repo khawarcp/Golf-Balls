@@ -16,7 +16,7 @@
               <input type="hidden" name="id" value="{{ card_product.variants.first.id }}" />
               {%- for option in card_product.options_with_values -%}
               {%- for value in option.values -%}
-                <div class="input-price-row" {% if current_variant.unavailable %} disabled {% endif %}>
+                <div class="input-price-row" {% if current_variant.available == false %} disabled {% endif %}>
                     <div class="radio-container">
                         <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}-{{ current_variant.id }}">
                             <input type="radio"
