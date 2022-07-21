@@ -16,7 +16,7 @@
               <input type="hidden" name="id" value="{{ card_product.variants.first.id }}" />
               {%- for option in card_product.options_with_values -%}
               {%- for value in option.values -%}
-                <div class="input-price-row {{ current_variant.inventory_quantity }} {% if current_variant.inventory_quantity < 1 %} out-of-stock {% endif %}">
+                <div class="input-price-row {% if current_variant.inventory_quantity < 1 %} out-of-stock {% endif %}">
                     <div class="radio-container">
                         <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}-{{ current_variant.id }}">
                             <input type="radio"
@@ -47,7 +47,7 @@
               <div class="product__variants_list">
                 <ul class="variants-list">
                   {% for variant in card_product.variants %}
-                  <li class="variants-list-items" {{variant.compare_at_price | money }}  value="{{ variant.id }}"
+                  <li data-quantity="{{ variant.inventory_quantity }}" class="variants-list-items" {{variant.compare_at_price | money }}  value="{{ variant.id }}"
                       {%- if variant == current_variant %} selected="selected" {%- endif -%}> 
                     {{ variant.title }} {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
                   </li>
