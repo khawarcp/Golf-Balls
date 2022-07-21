@@ -9,7 +9,7 @@
             <div class="newsletter-form_custom">
                 <input type="hidden" name="contact[tags]" value="newsletter">
                 <div class="input-field">
-                    <input type="text" name="contact[name]" id="NewsletterForm-Name-{{ section.id }}" value="{% if customer %}{{customer.name}}{{ form.name }}{% else %}{% endif %}" placeholder="Name">
+                    <input type="text" value="{% if customer %}{{customer.name}}{% else %}{{ form.name }}{% endif %}" placeholder="Name" name="contact[first_name]" id="NewsletterForm--{{ section.id }}">
                 </div>
                 <div class="input-field">
                     <input type="email" placeholder="Email"
