@@ -52,7 +52,10 @@
               <div class="product__variants_list">
                 <ul class="variants-list">
                   {% for variant in card_product.variants %}
-                  <li class="variants-list-items"></li>
+                  <li class="variants-list-items" value="{{ variant.id }}"
+                  {%- if variant == current_variant %} selected="selected" {%- endif -%}> 
+                    {{ variant.title }} {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
+                  </li>
                   {% endfor %}
                 </ul>
               </div>
