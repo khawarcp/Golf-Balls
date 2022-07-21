@@ -1006,5 +1006,8 @@ p.f-copywrite {
 
 .navigation.display {
     left: 0px;
-}    
+}
+.overflow {
+    overflow: hidden;
+}  
 }
