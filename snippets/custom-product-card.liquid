@@ -50,7 +50,7 @@
                     </div>
                 </div>
                 <div class="count-add-to-cart">
-                    <input type="number" min="1" value="1">
+                    <input type="number" id="quantity" name="quantity" min="1" value="1">
                     <button type="submit" class="custom-site-btn">
                         ADD TO CART
                     </button>
@@ -60,9 +60,3 @@
     </div>
 </div>
 
-
-<form method="post" action="/cart/add">
-  <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
-  <input min="1" type="number" id="quantity" name="quantity" value="1"/>
-  <input type="submit" value="Add to cart" class="btn" />
-</form> 
