@@ -912,7 +912,27 @@ p.f-copywrite {
 .newsletter-form_custom {
     display: flex;
 }
+.header-account ul li a span {
+    font-size: 13px;
+}
 
+.header-account ul li a {
+    text-decoration: none;
+    width: auto;
+    height: auto;
+}
+
+.header-account ul li a i.fa-user {font-size: 11px;color: #000;margin-right: 4px;}
+
+.header__icon span {
+    height: auto;
+}
+
+.header-account ul li a svg {
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+}
 
 @media screen and (min-width:1400px){
     .container{
