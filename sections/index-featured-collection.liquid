@@ -3,7 +3,9 @@
         <h3> {{ section.settings.heading }} </h3>
         <div class="row">
             {% for product in collections[section.settings.golf_collection].products %}
-                {% render 'custom-product-card', card_product : product,  %}    
+                {% render 'custom-product-card', card_product : product,
+                    show_quick_add: section.settings.enable_quick_add,
+                    section_id: section.id  %}    
             {% endfor %}
         </div>
     </div>
