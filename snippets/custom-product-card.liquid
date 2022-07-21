@@ -10,7 +10,7 @@
         <div class="featured-product-content">
             <h5> {{ card_product.title }} </h5>
             <span> {{ card_product.metafields.descriptors.subtitle }} </span>
-            <form method="post" action="/cart/add" id="{{ product_form_id }}">
+           {%- form 'product', product, id: product_form_id, novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
               <input type="hidden" name="id" value="{{ card_product.selected_or_first_available_variant.id }}">
                 <div class="input-price-row">
                     <div class="radio-container">
@@ -58,7 +58,7 @@
                         ADD TO CART
                     </button>
                 </div>
-            </form>
+            {% endform %}
         </div>
     </div>
 </div>
