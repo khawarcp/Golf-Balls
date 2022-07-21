@@ -1,0 +1,10 @@
+{
+    "sections" :{
+        "main" : {
+            "type" : "buygolf-content"
+        }
+    },
+    "order" : [
+        "main"
+    ]
+}
