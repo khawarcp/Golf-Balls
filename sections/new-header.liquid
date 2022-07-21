@@ -6,22 +6,22 @@
         <div class="header-account">
           <ul>
             <li>
-        
-            {%- if shop.customer_accounts_enabled -%}
-                <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
-                  <span class="login-user"> <i class="fas fa-user"></i> LOGIN </span>
-                  <span class="visually-hidden">
-                    {%- liquid
+
+              {%- if shop.customer_accounts_enabled -%}
+              <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
+                <span class="login-user"> <i class="fas fa-user"></i> LOGIN </span>
+                <span class="visually-hidden">
+                  {%- liquid
                       if customer
                         echo 'customer.account_fallback' | t
                       else
                         echo 'customer.log_in' | t
                       endif
                     -%}
-                  </span>
-                </a>
+                </span>
+              </a>
               {%- endif -%}
-              
+
             </li>
             <li>             
               <a href="{{ routes.cart_url }}" class="header__icon header__icon--cart link focus-inset" id="cart-icon-bubble">
@@ -34,12 +34,12 @@
                 -%}
                 <span >{{ 'templates.cart.cart' | t }}</span>
                 {%- if cart != empty -%}
-                  <div class="cart-count-bubble">
-                    {%- if cart.item_count < 100 -%}
-                      <span aria-hidden="true">{{ cart.item_count }}</span>
-                    {%- endif -%}
-                    <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
-                  </div>
+                <div class="cart-count-bubble">
+                  {%- if cart.item_count < 100 -%}
+                  <span aria-hidden="true">{{ cart.item_count }}</span>
+                  {%- endif -%}
+                  <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
+                </div>
                 {%- endif -%}
               </a>
 
@@ -60,14 +60,14 @@
             {% if section.settings.logo != blank %}
             <img src="{{section.settings.logo | img_url: 'master'}}" loading="lazy" alt="{{ shop.name }}">
             {% else %}
-             <span class="h2">{{ shop.name }}</span>
+            <span class="h2">{{ shop.name }}</span>
             {% endif %}
           </a>
         </div>
         <div class="navigation">
           <ul>
             {% for link in linklists[section.settings.main_menu].links %}
-               <li class="{% if link.active %}active{% endif %}"><a href="{{ link.url }}">{{ link.title }}</a></li>
+            <li class="{% if link.active %}active{% endif %}"><a href="{{ link.url }}">{{ link.title }}</a></li>
             {% endfor %}
           </ul>
         </div>
@@ -78,13 +78,14 @@
               <button type="submit"><i class="fas fa-search"></i></button>
             </div>
           </form>
-        </div>
-        <div class="menu-bar">
-          <span></span>
-          <span></span>
-          <span></span>
+          <div class="menu-bar">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
+
     </div>
   </div>
 </header>
