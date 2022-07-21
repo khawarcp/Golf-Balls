@@ -905,6 +905,9 @@ p.f-copywrite {
 .count-add-to-cart button:hover {
     border: 1px solid #047835;
 }
+* {
+    font-size: 16px;
+}
 
 @media screen and (min-width:1400px){
     .container{
