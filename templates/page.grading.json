@@ -1,10 +1,12 @@
 {
-    "sections":{
-        "main" : {
-            "type" : "grading-content"
-        }
-    },
-    "order" : [
-        "main"
-    ]
+  "sections": {
+    "main": {
+      "type": "grading-content",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
 }
