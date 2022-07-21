@@ -12,7 +12,7 @@
             <span> {{ card_product.metafields.descriptors.subtitle }} </span>
             <form method="post" action="/cart/add">
               <input type="hidden" name="id" value="{{ card_product.variants.first.id }}" />
-              {%- for option in card_product.options_with_values[0] -%}
+              {%- for option in card_product.options_with_values -%}
               {%- for value in option.values -%}
                 <div class="input-price-row">
                     <div class="radio-container">
