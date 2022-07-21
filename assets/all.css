@@ -1027,5 +1027,8 @@ p.f-copywrite {
 .menu-bar.active {
     top: 4px;
     position: relative;
+}
+.menu-bar span {
+    transition: 0.2s all;
 }  
 }
