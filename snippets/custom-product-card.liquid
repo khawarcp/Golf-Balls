@@ -5,9 +5,9 @@
     <div class="featured-product-col">
         <div class="featured-product-img">
             <img loading="lazy" alt="{{ card_product.title }}" src="{{ card_product.featured_image |  img_url: 'master' }}">
-          	{%- if card_product.compare_at_price > card_product.price  -%}
+          	
             <span class="sale-product"><img loading="lazy" alt="sale-badge" src="{{ 'sale-product.png' | asset_img_url: 'master' }}"></span>
-    		{% endif %}
+    		
         </div>
         <div class="featured-product-content">
             <h5> {{ card_product.title }} </h5>
