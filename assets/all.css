@@ -1489,4 +1489,21 @@ p.f-copywrite {
 .office-store-map-row {
     flex-direction: column;
 }
+.office-store-col {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.store-map {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.store-map iframe {
+    height: 300px;
+}
+
+.buy-golfballs.contact-golfballs {
+    padding-bottom: 60px;
+}  
 }
