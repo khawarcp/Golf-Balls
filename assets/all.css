@@ -948,6 +948,13 @@ p.f-copywrite {
 .golf-grade-list ul {
     min-height: 226px;
 }
+.input-submit input {
+    border: 2px solid transparent;
+}
+
+.input-submit input:hover {
+    border-color: #047835;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
