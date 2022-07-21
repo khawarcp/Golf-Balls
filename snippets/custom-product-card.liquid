@@ -49,6 +49,13 @@
                         <h6 class="discount-price">$14.99</h6>
                     </div>
                 </div>
+              <div class="product__variants_list">
+                <ul class="variants-list">
+                  {% for variant in card_product.variants %}
+                  <li class="variants-list-items"></li>
+                  {% endfor %}
+                </ul>
+              </div>
                 <div class="count-add-to-cart">
                     <input type="number" autocomplete="off" id="quantity" name="quantity" min="1" value="1">
                     <button type="submit" class="custom-site-btn">
@@ -59,4 +66,10 @@
         </div>
     </div>
 </div>
+
+<style>
+  .product__variants_list{
+    display : none;
+  }
+</style>
 
