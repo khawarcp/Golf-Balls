@@ -4,57 +4,55 @@
             <h3> {{ page.title }} </h3>
             {{ page.content }}
             <div class="row">
-                <div class="col-md-4">
-                    <div class="golfball-grade-col">
-                        <div class="golfball-grade-img">
-                            <img src="assets/images/golfgrade-img1.png" alt="golfgrade-img1">
-                        </div>
-                        <div class="golf-grade-list">
-                            <h4>MINT (5A)</h4>
-                            <ul>
-                                <li>The very finest balls from our hand-selected sorting process</li>
-                                <li>Excellent/superb condition</li>
-                                <li>No scuffs or club marks</li>
-                                <li>May contain team or corporate logos and/or standard player pen markings</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="golfball-grade-col">
-                        <div class="golfball-grade-img">
-                            <img src="assets/images/golfgrade-img2.png" alt="golfgrade-img2">
-                        </div>
-                        <div class="golf-grade-list">
-                            <h4>NEAR MINT (4A)</h4>
-                            <ul>
-                                <li>Very good condition balls at a reasonable price</li>
-                                <li>May have vary slight abrasions or minor discoloration </li>
-                                <li>May have small blemishes or cosmetic</li>
-                                <li>May have larger player pen markings</li>
-                                <li>May contain team or corporate logos</li>
-                            </ul>
+                {% for block in section.blocks %}
+                    <div class="col-md-4">
+                        <div class="golfball-grade-col">
+                            <div class="golfball-grade-img">
+                                <img loading="lazy" src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.image.alt }}">
+                            </div>
+                            <div class="golf-grade-list">
+                                <h4>{{ block.settings.heading }}</h4>
+                                <ul>
+                                    {{ block.settings.content }}
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="golfball-grade-col">
-                        <div class="golfball-grade-img">
-                            <img src="assets/images/golfgrade-img3.png" alt="golfgrade-img3">
-                        </div>
-                        <div class="golf-grade-list">
-                            <h4>GOOD (3A)</h4>
-                            <ul>
-                                <li>Playable balls for the golfer that doesn't mind some small abrasions or scuff marks</li>
-                                <li>May have varied discoloration/tint</li>
-                                <li>May contain team or corporate logos and/or larger player pen markings</li>
-                                <li>May include imprints of X-Outs or Practice on them
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </div>
 </section>
+
+{% schema %}
+{
+   "name": "Golden Ball Grading",
+   "settings":[],
+   "blocks" :
+   [
+        {
+            "name" : "Grading",
+            "type" : "grading",
+            "limit" : 3,
+            "settings" :
+            [
+               {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Image"
+               },
+                {
+                 "type": "text",
+                 "id": "heading",
+                 "label": "Heading"
+                },
+                {
+                 "type": "html",
+                 "id": "content",
+                 "label": "Features"
+                }
+            ]
+        }
+   ]
+}
+{% endschema %}
