@@ -2,6 +2,37 @@
   "sections": {
     "main": {
       "type": "grading-content",
+      "blocks": {
+        "454557b0-98d5-417a-94aa-e75050ae5ca2": {
+          "type": "grading",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/golfgrade-img1.png",
+            "heading": "MINT (5A)",
+            "content": "<li>The very finest balls from our hand-selected sorting process<\/li>\n                                    <li>Excellent\/superb condition<\/li>\n                                    <li>No scuffs or club marks<\/li>\n                                    <li>May contain team or corporate logos and\/or standard player pen markings<\/li>"
+          }
+        },
+        "d643c168-1d4b-429b-82b0-34f27814314b": {
+          "type": "grading",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/golfgrade-img2.png",
+            "heading": "NEAR MINT (4A)",
+            "content": "<li>Very good condition balls at a reasonable price<\/li>\n                                    <li>May have vary slight abrasions or minor discoloration <\/li>\n                                    <li>May have small blemishes or cosmetic<\/li>\n                                    <li>May have larger player pen markings<\/li>\n                                    <li>May contain team or corporate logos<\/li>"
+          }
+        },
+        "cc7329ce-f38d-4396-8b9c-475170ff519f": {
+          "type": "grading",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/golfgrade-img3.png",
+            "heading": "GOOD (3A)",
+            "content": "<li>Playable balls for the golfer that doesn't mind some small abrasions or scuff marks<\/li>\n                                    <li>May have varied discoloration\/tint<\/li>\n                                    <li>May contain team or corporate logos and\/or larger player pen markings<\/li>\n                                    <li>May include imprints of X-Outs or Practice on them <\/li>"
+          }
+        }
+      },
+      "block_order": [
+        "454557b0-98d5-417a-94aa-e75050ae5ca2",
+        "d643c168-1d4b-429b-82b0-34f27814314b",
+        "cc7329ce-f38d-4396-8b9c-475170ff519f"
+      ],
       "settings": {
       }
     }
