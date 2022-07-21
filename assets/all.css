@@ -1486,5 +1486,7 @@ a.footer-logo {
 p.f-copywrite {
     text-align: center;
 }
-
+.office-store-map-row {
+    flex-direction: column;
+}
 }
