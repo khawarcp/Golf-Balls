@@ -18,7 +18,7 @@
               {%- for value in option.values -%}
                 <div class="input-price-row">
                     <div class="radio-container" {% if current_variant.inventory_quantity < 1 %}  {% endif %}>
-                        <label disabled="disabled" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}-{{ current_variant.id }}">
+                        <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}-{{ current_variant.id }}">
                             <input type="radio"
                                    {% if forloop.first %}checked="checked"{% endif %}
                                    name="radio" 
