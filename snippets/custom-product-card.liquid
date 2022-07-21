@@ -51,22 +51,22 @@
                         <h6 class="discount-price">$14.99</h6>
                     </div>
                 </div>
-              <div class="product__variants_list">
-                <ul class="variants-list">
-                  {% for variant in card_product.variants %}
-                  <li class="variants-list-items" {{variant.compare_at_price | money }}  value="{{ variant.id }}"
-                  {%- if variant == current_variant %} selected="selected" {%- endif -%}> 
-                    {{ variant.title }} {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
-                  </li>
-                  {% endfor %}
-                </ul>
-              </div>
                 <div class="count-add-to-cart">
                     <input type="number" autocomplete="off" id="quantity" name="quantity" min="1" value="1">
                     <button type="submit" class="custom-site-btn">
                         ADD TO CART
                     </button>
                 </div>
+              <div class="product__variants_list">
+                <ul class="variants-list">
+                  {% for variant in card_product.variants %}
+                  <li class="variants-list-items" {{variant.compare_at_price | money }}  value="{{ variant.id }}"
+                      {%- if variant == current_variant %} selected="selected" {%- endif -%}> 
+                    {{ variant.title }} {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
+                  </li>
+                  {% endfor %}
+                </ul>
+              </div>
             </form>
         </div>
     </div>
