@@ -8,7 +8,8 @@
         <div class="featured-product-content">
             <h5> {{ card_product.title }} </h5>
             <span> {{ card_product.metafields.descriptors.subtitle }} </span>
-            <form>
+            <form method="post" action="/cart/add">
+              <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
                 <div class="input-price-row">
                     <div class="radio-container">
                         <label>
@@ -50,7 +51,7 @@
                 </div>
                 <div class="count-add-to-cart">
                     <input type="number" min="1" value="1">
-                    <button class="custom-site-btn">
+                    <button type="submit" class="custom-site-btn">
                         ADD TO CART
                     </button>
                 </div>
@@ -58,3 +59,10 @@
         </div>
     </div>
 </div>
+
+
+<form method="post" action="/cart/add">
+  <input type="hidden" name="id" value="{{ product.variants.first.id }}" />
+  <input min="1" type="number" id="quantity" name="quantity" value="1"/>
+  <input type="submit" value="Add to cart" class="btn" />
+</form> 
