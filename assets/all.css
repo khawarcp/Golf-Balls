@@ -909,6 +909,11 @@ p.f-copywrite {
     font-size: 16px;
 }
 
+.newsletter-form_custom {
+    display: flex;
+}
+
+
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
