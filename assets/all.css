@@ -493,6 +493,7 @@ span.sale-product {
     top: 0px;
     right: 0px;
     width: 38px;
+    z-index: 9;
 }
 .count-add-to-cart {
     display: flex;
