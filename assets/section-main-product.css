@@ -61,14 +61,14 @@
 
   .product--medium:not(.product--no-media) .product__media-wrapper,
   .product--small:not(.product--no-media) .product__info-wrapper {
-    max-width: 33%;
-    width: calc(33% - var(--grid-desktop-horizontal-spacing) / 3);
+    max-width: 35%;
+    width: calc(35% - var(--grid-desktop-horizontal-spacing) / 3);
   }
 
   .product--medium:not(.product--no-media) .product__info-wrapper,
   .product--small:not(.product--no-media) .product__media-wrapper {
-    max-width: 33%;
-    width: calc(33% - var(--grid-desktop-horizontal-spacing) / 3);
+    max-width: 35%;
+    width: calc(35% - var(--grid-desktop-horizontal-spacing) / 3);
   }
 }
 
