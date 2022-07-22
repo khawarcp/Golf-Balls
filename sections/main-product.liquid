@@ -520,6 +520,9 @@
       </div>
     </div>
     <div class="related-product-wrapper grid__item">
+      <div class="related-heading">
+        <h2>Related Product</h2>
+      </div>
       {% assign product_collection = product.collections.first %}
       {% if product_collection %}
         {% for product in product_collection.products limit:5 %}
