@@ -1212,3 +1212,7 @@ margin-bottom: 100px;
 {
   border-top: 1px solid;
 }
+.product-form__input input[type=radio]
+{
+  accent-color: #047835;
+}
