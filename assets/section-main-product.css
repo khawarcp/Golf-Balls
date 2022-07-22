@@ -1196,3 +1196,9 @@ margin-bottom: 100px;
 {
   border:none;
 }
+.product__title h1
+{
+  color: #047835;
+  font-size: 30px;
+}
+
