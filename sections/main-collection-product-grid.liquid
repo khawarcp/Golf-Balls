@@ -100,7 +100,7 @@
     
             <ul id="product-grid" data-id="{{ section.id }}" class="
               grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down
-              grid--{{ section.settings.columns_desktop }}-col-desktop">
+              grid--{{ section.settings.columns_desktop }}-col-desktop products-on-page" data-next-url="{{ paginate.next.url }}">
               {%- for product in collection.products -%}
                 {% assign lazy_load = false %}
                 {%- if forloop.index > 2 -%}
@@ -141,10 +141,10 @@
     {
       "type": "range",
       "id": "products_per_page",
-      "min": 8,
+      "min": 6,
       "max": 24,
-      "step": 4,
-      "default": 16,
+      "step": 3,
+      "default": 15,
       "label": "t:sections.main-collection-product-grid.settings.products_per_page.label"
     },
     {
