@@ -8,6 +8,9 @@ $(document).ready(function(){
 })
 
 
+// remove visually hidden class form cart icon header
+$('#cart-icon-bubble').find('svg + span').removeClass('visually-hidden');
+
 // select variants at homepage and collection page
 var varVal;
 var replaceId;
