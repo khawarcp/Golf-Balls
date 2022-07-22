@@ -345,7 +345,7 @@
                 <div class="additional-details">
             <div class="brand-title"><strong>Brand:</strong>{{ product.vendor }}
             </div>
-            <div class="product-weight"><strong>Brand:</strong>{{ product.weight }}
+            <div class="product-weight"><strong>Weight:</strong>{{ product.variants.first.weight | weight_with_unit }}
             </div>
             <div class="product-gradees"><strong>Available Grades:</strong>
             {%- for option in product.options_with_values -%}
