@@ -179,6 +179,7 @@ fieldset.product-form__input .form__label {
     position: absolute;
     height: 50px;
     width: 15px;
+  opacity:1;
 }
 
 .product-form__input input[type='radio'] + label {
