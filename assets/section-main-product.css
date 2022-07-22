@@ -1228,6 +1228,11 @@ margin-bottom: 100px;
 }
 .custom-site-btn span:hover
 {
-    color: #000!important;
+    color: #000 !important;
 }
+.custom-site-btn:hover
+{
+    color: #000 !important;
+}
+
 
