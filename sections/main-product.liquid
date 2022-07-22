@@ -343,17 +343,32 @@
                 <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                   {%- for option in product.options_with_values -%}
                       <fieldset class="js product-form__input">
-                        <legend class="form__label">{{ option.name }}</legend>
                         {%- for value in option.values -%}
+                          <div class="input-price-row">
+                    <div class="radio-container">
+                        <label for="Option-{{ section.id }}-{{ forloop.index0 }}">
+                            <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+                                name="{{ option.name }}"
+                                value="{{ value | escape }}"
+                                form="{{ product_form_id }}"
+                                data-inventory="{{ product.variants[forloop.index0].inventory_quantity }}"
+                                {% if option.selected_value == value %}checked{% endif %}
+                          >
+                          {{ value }}
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="fearured-price">
+                        <h6 class="{% if current_variant.compare_at_price > 0 %}del-price{% endif %}"> {{ product.variants[forloop.index0].compare_at_price | money }} </h6>
+                       <h6 class="discount-price"> {{ card_product.variants[forloop.index0].price | money }} </h6>
+                    </div>
+                </div>
                           <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
                                 name="{{ option.name }}"
                                 value="{{ value | escape }}"
                                 form="{{ product_form_id }}"
                                 {% if option.selected_value == value %}checked{% endif %}
                           >
-                          <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
-                            {{ value }}
-                          </label>
                         {%- endfor -%}
                       </fieldset>
                   {%- endfor -%}
