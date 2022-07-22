@@ -335,6 +335,18 @@
             </share-button>
             <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
           {%- when 'variant_picker' -%}
+            <div class="additional-details">
+            <div class="brand-title"><strong>Brand:</strong>{{ product.vendor }}
+            </div>
+            <div class="product-weight"><strong>Brand:</strong>{{ product.weight }}
+            </div>
+            <div class="product-gradees"><strong>Available Grades:</strong>
+            {%- for option in product.options_with_values -%}
+              {%- for value in option.values -%}
+                {{ value | escape }},
+                {% endfor %}
+                {% endfor %}
+            </div>
             {% assign isRadio = false %}
               {% if product.options contains 'Type' %}
                 {% assign isRadio = true %}
