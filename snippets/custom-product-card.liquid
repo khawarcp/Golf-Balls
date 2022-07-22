@@ -50,7 +50,7 @@
               <div class="product__variants_list">
                 <ul class="variants-list">
                   {% for variant in card_product.variants %}
-                  <li data-quantity="{{ variant.inventory_quantity }}" class="variants-list-items" {{variant.compare_at_price | money }}  value="{{ variant.id }}"
+                  <li data-quantity="{{ variant.inventory_quantity }}" class="variants-list-items" data-variantId="{{variant.id }}"  value="{{ variant.id }}"
                       {%- if variant == current_variant %} selected="selected" {%- endif -%}> 
                     {{ variant.title }} {%- if variant.available == false %} - {{ 'products.product.sold_out' | t }}{% endif %}
                   </li>
