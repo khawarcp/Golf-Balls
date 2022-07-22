@@ -1145,5 +1145,15 @@
     gap: 10px;
     border-bottom: 1px solid;
     margin: 0px 10px;
+    position:relative;
   }
+  .related-product-wrapper .featured-product-col:before {
+  content : "";
+  position: absolute;
+  left    : 0;
+  bottom  : 0;
+  height  : 1px;
+  width   : 50%;  /* or 100px */
+  border-bottom:1px solid;
+}
 </style>
