@@ -1226,3 +1226,8 @@ margin-bottom: 100px;
     color: #fff!important;
     font-size: 15px;
 }
+.custom-site-btn span:hover
+{
+    color: #000!important;
+}
+
