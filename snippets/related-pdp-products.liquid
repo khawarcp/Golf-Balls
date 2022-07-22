@@ -1,9 +1,7 @@
 
 {%- assign current_variant = product.selected_or_first_available_variant -%}
 
-{% unless template contains 'collection' %}
 <div class="col-md-3">
-  {% endunless %}
     <div class="featured-product-col">
         <div class="featured-product-img">
             <a href="{{ card_product.url }}"> <img loading="lazy" alt="{{ card_product.title }}" src="{{ card_product.featured_image |  img_url: 'master' }}"> </a>
