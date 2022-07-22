@@ -60,8 +60,7 @@
               <li id="Slide-{{ section.id }}-{{ featured_media.id }}" class="product__media-item grid__item slider__slide is-active{% if featured_media.media_type != 'image' %} product__media-item--full{% endif %}{% if section.settings.hide_variants and variant_images contains featured_media.src %} product__media-item--variant{% endif %}" data-media-id="{{ section.id }}-{{ featured_media.id }}">
                 {%- assign media_position = 1 -%}
                 {% render 'product-thumbnail', media: featured_media, position: media_position, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true, media_width: media_width, lazy_load: false %}
-              </li>
-            <span class="sale-product" {{ product.price }}><img loading="lazy" alt="sale-badge" src="{{ 'sale-product.png' | asset_img_url: 'master' }}"></span>
+              </li>          
             {%- endif -%}
             {%- for media in product.media -%}
               {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
@@ -77,6 +76,9 @@
                 </li>
               {%- endunless -%}
             {%- endfor -%}
+             {% if product.selected_or_first_available_variant > product.price %}
+            <span class="sale-product" {{ product.price }}><img loading="lazy" alt="sale-badge" src="{{ 'sale-product.png' | asset_img_url: 'master' }}"></span>
+          	{% endif %}  
           </ul>
           <div class="slider-buttons no-js-hidden quick-add-hidden{% if media_count < 2 or section.settings.mobile_thumbnails == 'show' %} small-hide{% endif %}">
             <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'general.slider.previous_slide' | t }}">{% render 'icon-caret' %}</button>
