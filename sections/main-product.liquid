@@ -346,22 +346,24 @@
                         {%- for value in option.values -%}
                           <div class="input-price-row">
                     <div class="radio-container">
-                        <label for="Option-{{ section.id }}-{{ forloop.index0 }}">
-                            <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
-                                name="{{ option.name }}"
-                                value="{{ value | escape }}"
-                                form="{{ product_form_id }}"
-                                data-inventory="{{ product.variants[forloop.index0].inventory_quantity }}"
-                                {% if option.selected_value == value %}checked{% endif %}
-                          >
-                          {{ value }}
+                        <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}-{{ current_variant.id }}">
+                            <input type="radio"
+                                   {% if forloop.first %}checked="checked"{% endif %}
+                                   name="radio" 
+                                   id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}-{{ current_variant.id }}" 
+                                   name="{{ option.name }}"
+                                   value="{{ value | escape }}"
+                                   data-inventory="{{ card_product.variants[forloop.index0].inventory_quantity }}"
+                                   >
+                            {{ value }}
                             <span class="checkmark"></span>
                         </label>
                     </div>
                     <div class="fearured-price">
-                        <h6 class="{% if current_variant.compare_at_price > 0 %}del-price{% endif %}"> {{ product.variants[forloop.index0].compare_at_price | money }} </h6>
-                       <h6 class="discount-price"> {{ card_product.variants[forloop.index0].price | money }} </h6>
+                        <h6 class="{% if current_variant.compare_at_price > 0 %}del-price{% endif %}"> {{ card_product.variants[forloop.index0].compare_at_price | money }} </h6>
+                        <h6 class="discount-price"> {{ card_product.variants[forloop.index0].price | money }} </h6>
                     </div>
+                </div>
                 </div>
                         {%- endfor -%}
                       </fieldset>
