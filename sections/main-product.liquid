@@ -335,7 +335,14 @@
             </share-button>
             <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
           {%- when 'variant_picker' -%}
-            <div class="additional-details">
+            
+            {% assign isRadio = false %}
+              {% if product.options contains 'Type' %}
+                {% assign isRadio = true %}
+              {% endif %}
+            {%- unless product.has_only_default_variant -%}
+              {%- if isRadio -%}
+                <div class="additional-details">
             <div class="brand-title"><strong>Brand:</strong>{{ product.vendor }}
             </div>
             <div class="product-weight"><strong>Brand:</strong>{{ product.weight }}
@@ -347,12 +354,7 @@
                 {% endfor %}
                 {% endfor %}
             </div>
-            {% assign isRadio = false %}
-              {% if product.options contains 'Type' %}
-                {% assign isRadio = true %}
-              {% endif %}
-            {%- unless product.has_only_default_variant -%}
-              {%- if isRadio -%}
+            </div
                 <variant-radios class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
                   {%- for option in product.options_with_values -%}
                       <fieldset class="js product-form__input">
