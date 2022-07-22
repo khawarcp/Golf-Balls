@@ -1220,3 +1220,9 @@ margin-bottom: 100px;
 {
   color: #047835;
 }
+.custom-site-btn span
+{
+    font-weight: 500;
+    color: #fff!important;
+    font-size: 15px;
+}
