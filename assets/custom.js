@@ -23,3 +23,14 @@ $('.input-price-row').find('input[type=radio]').on('change', function(){
         }
     })
 });
+
+// go through all product and check quantity if 0 then add out of stock
+$('.input-price-row').each(function(){
+  var masterValSold = $(this).find('.radio-container input[type=radio]').data('inventory');
+  if(masterValSold == 0){
+      var inputRow = $(this).closest('.input-price-row');
+      inputRow.addClass('out-of-stock');
+     inputRow.find('.fearured-price').html('<h6>Out of Stock</h6>');
+  }
+});
+

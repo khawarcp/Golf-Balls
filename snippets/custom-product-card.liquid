@@ -28,7 +28,7 @@
                                    id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}-{{ current_variant.id }}" 
                                    name="{{ option.name }}"
                                    value="{{ value | escape }}"
-                                   
+                                   data-inventory="{{ card_product.variants[forloop.index0].inventory_quantity }}"
                                    >
                             {{ value }}
                             <span class="checkmark"></span>
