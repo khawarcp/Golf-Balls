@@ -1216,3 +1216,7 @@ margin-bottom: 100px;
 {
   accent-color: #047835;
 }
+.product-form__input input[type=radio]:checked+label
+{
+  color: #047835;
+}
