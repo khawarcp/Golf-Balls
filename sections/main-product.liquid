@@ -351,6 +351,7 @@
                                 name="{{ option.name }}"
                                 value="{{ value | escape }}"
                                 form="{{ product_form_id }}"
+                                data-inventory="{{ product.variants[forloop.index0].inventory_quantity }}"
                                 {% if option.selected_value == value %}checked{% endif %}
                           >
                           <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
