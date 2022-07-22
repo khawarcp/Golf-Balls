@@ -1064,6 +1064,7 @@ label.facet-checkbox span {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 25px;
 }
 
 .collection--breadcrumb ul li, .collection--breadcrumb ul li a i,.collection--breadcrumb ul li, .collection--breadcrumb ul li a {
