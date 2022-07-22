@@ -1208,3 +1208,7 @@ margin-bottom: 100px;
   font-weight: 500;
   color: #047835;
 }
+.product-form__input
+{
+  border-top: 1px solid;
+}
