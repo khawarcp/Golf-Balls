@@ -456,7 +456,7 @@
                     <button
                       type="submit"
                       name="add"
-                      class="product-form__submit custom-site-btn {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}button--secondary{% else %}button--primary{% endif %}"
+                      class="custom-site-btn {% if block.settings.show_dynamic_checkout and product.selling_plan_groups == empty %}{% else %}{% endif %}"
                       {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
                     >
                         <span>
