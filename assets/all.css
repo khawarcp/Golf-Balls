@@ -1082,6 +1082,13 @@ label.facet-checkbox span {
     padding: 0px 20px;
     margin-bottom: 30px;
 }
+.cart-count-bubble span {
+    font-size: 10px !important;
+}
+
+.cart-count-bubble {
+    position: static;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
