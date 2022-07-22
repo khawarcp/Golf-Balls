@@ -345,6 +345,8 @@
                       <fieldset class="js product-form__input">
                         <legend class="form__label">{{ option.name }}</legend>
                         {%- for value in option.values -%}
+                          <div class="input-price-row">
+                          <div class="radio-container">
                           <input type="radio" id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
                                 name="{{ option.name }}"
                                 value="{{ value | escape }}"
@@ -354,6 +356,12 @@
                           <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
                             {{ value }}
                           </label>
+                          </div>
+                          <div class="fearured-price">
+                        <h6 class="{% if product.variants[forloop.index0].compare_at_price > 0 %}del-price{% endif %}"> {{ product.variants[forloop.index0].compare_at_price | money }} </h6>
+                        <h6 class="discount-price"> {{ product.variants[forloop.index0].price | money }} </h6>
+                    </div>
+                          </div>
                         {%- endfor -%}
                       </fieldset>
                   {%- endfor -%}
