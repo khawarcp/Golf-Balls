@@ -72,8 +72,8 @@
     width: calc(30% - var(--grid-desktop-horizontal-spacing) / 3);
   }
   .related-product-wrapper {
-    max-width: 30%;
-    width: calc(30% - var(--grid-desktop-horizontal-spacing) / 3);
+    max-width: 30% !important;
+    width: calc(30% - var(--grid-desktop-horizontal-spacing) / 3) !important;
   }
 }
 
