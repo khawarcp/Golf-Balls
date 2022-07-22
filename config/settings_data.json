@@ -211,6 +211,14 @@
           "menu_3": "WHOLESALE",
           "menu_3_links": "wholesale"
         }
+      },
+      "index-newsletter": {
+        "type": "index-newsletter",
+        "settings": {
+          "heading": "SIGN UP TO GET UPDATES",
+          "subheading": "Receive discounts and specials",
+          "background_image": "shopify:\/\/shop_images\/newsletter-bg.png"
+        }
       }
     },
     "content_for_index": [
