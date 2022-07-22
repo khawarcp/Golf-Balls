@@ -84,6 +84,20 @@
     {%- endif -%}
 
     <div class="product-grid-container" id="ProductGridContainer">
+
+      <div class="collection--header">
+        <div class="collection--title">
+          <h1 class="collection-hero__title"> {{- collection.title | escape -}} </h1>
+        </div>
+        <div class="collection--breadcrumb">
+            <ul>
+              <li> <a href="/"> Home </a> </li>
+              <li> <span> <i class="far fa-angle-double-right"></i> </span> </li>
+              <li> {{ collection.title }} </li>
+            </ul>
+        </div>
+      </div>
+
       {%- paginate collection.products by section.settings.products_per_page -%}
         {%- if collection.products.size == 0 -%}
           <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">

@@ -1002,6 +1002,12 @@ p.f-copywrite {
 }
 
 
+.collection-hero__title {
+    text-transform: uppercase;
+    color: #047835;
+    font-size: 30px;
+}
+
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
