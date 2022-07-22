@@ -1007,7 +1007,30 @@ p.f-copywrite {
     color: #047835;
     font-size: 30px;
 }
+section.shop-golf-balls.shop-page .row {
+    flex-direction: column;
+    /* margin: 0; */
+    top: 0px;
+}
 
+section.shop-golf-balls.shop-page .row .col-md-4 {
+    width: 100%;
+    padding: 0px;
+}
+
+section.shop-golf-balls.shop-page {
+    background-color: transparent;
+}
+
+section.shop-golf-balls.shop-page .golfball-col h2 {
+    font-size: 25px;
+}
+
+.golfball-col {}
+
+section.shop-golf-balls.shop-page .golfball-col {
+    margin-bottom: 20px;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
