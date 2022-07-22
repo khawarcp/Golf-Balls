@@ -398,11 +398,12 @@ h5 {
     position: relative;
 }
 
-.featured-product-content h5 {
+.featured-product-content h5 a {
     text-align: center;
-    margin-bottom: 0px;
+    margin-bottom: 0;
     color: #047835;
     font-weight: 500;
+    display: block;
 }
 
 .featured-product-content span {
