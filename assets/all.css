@@ -1031,6 +1031,30 @@ section.shop-golf-balls.shop-page .golfball-col h2 {
 section.shop-golf-balls.shop-page .golfball-col {
     margin-bottom: 20px;
 }
+.facets-container summary.facets__summary span {
+    font-size: 24px;
+    color: #047835;
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+
+.facet-checkbox>svg {
+    background-color: #fff;
+    margin-top: 2px;
+}
+
+.facet-checkbox>input[type=checkbox]:checked~.icon-checkmark path {
+    color: #fff;
+}
+
+label.facet-checkbox span {
+    color: #343434 !important;
+    font-size: 14px;
+    font-family: 'Roboto';
+}
+.facet-checkbox>input[type=checkbox]:checked ~ svg {
+    background-color: green;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
