@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="{{ 'quick-add.css' | asset_url }}" media="print" onload="this.media='all'">
   <script src="{{ 'quick-add.js' | asset_url }}" defer="defer"></script>
   <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'load-more.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 
@@ -124,6 +125,10 @@
     
             {%- if paginate.pages > 1 -%}
               {% render 'pagination', paginate: paginate, anchor: '' %}
+              <div class="load-more">
+                  <a class="load-more__btn" onclick="shopMore()"> Shop All </a>
+                  <span class="load-more__spinner"></span>
+              </div>
             {%- endif -%}
           </div>
         {%- endif -%}
