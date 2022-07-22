@@ -1055,6 +1055,27 @@ label.facet-checkbox span {
 .facet-checkbox>input[type=checkbox]:checked ~ svg {
     background-color: #047835;
 }
+.collection--breadcrumb ul {
+    display: flex;
+    align-items: center;
+}
+
+.collection--header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.collection--breadcrumb ul li, .collection--breadcrumb ul li a i,.collection--breadcrumb ul li, .collection--breadcrumb ul li a {
+    color: #047835;
+    font-size: 13px;
+    font-family: 'Roboto';
+}
+
+.collection--breadcrumb ul li span i {
+    font-size: 11px;
+    margin: 0px 3px;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
