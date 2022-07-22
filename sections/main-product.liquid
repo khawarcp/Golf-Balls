@@ -61,6 +61,9 @@
                 {%- assign media_position = 1 -%}
                 {% render 'product-thumbnail', media: featured_media, position: media_position, loop: section.settings.enable_video_looping, modal_id: section.id, xr_button: true, media_width: media_width, lazy_load: false %}
               </li>
+            {% if product.compare_at_price > product.price %}
+            <span class="sale-product" {{ product.price }}><img loading="lazy" alt="sale-badge" src="{{ 'sale-product.png' | asset_img_url: 'master' }}"></span>
+          	{% endif %}            
             {%- endif -%}
             {%- for media in product.media -%}
               {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
