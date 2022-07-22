@@ -373,7 +373,8 @@ a.product__text {
   }
 
   .product__info-container .price--on-sale .price-item--regular {
-    font-size: 1.6rem;
+    font-size: 2rem;
+    font-weight: 500;
   }
 
   .product__info-container > *:first-child {
@@ -1201,7 +1202,8 @@ margin-bottom: 100px;
   color: #047835;
   font-size: 30px;
 }
-.price-item
+.price .price-item
 {
   font-size: 2rem;
+  font-weight: 500;
 }
