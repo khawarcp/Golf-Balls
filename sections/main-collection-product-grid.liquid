@@ -80,7 +80,34 @@
     {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
       <aside aria-labelledby="verticalTitle" class="facets-wrapper{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}" id="main-collection-filters" data-id="{{ section.id }}">
         {% render 'facets', results: collection, enable_filtering: section.settings.enable_filtering, enable_sorting: section.settings.enable_sorting, filter_type: section.settings.filter_type %}
+       
+        
+        <section class="shop-golf-balls">
+          <div class="container">
+              <div class="row">
+                  {% for block in section.blocks %}                
+                  <div class="col-md-4">
+                      <div class="golfball-col" loading="lazy" style="background-image: url('{{ block.settings.image | img_url : 'master' }}');">
+                          <h2> 
+                              {% if block.settings.url != blank %}                            
+                              <a href="{{ block.settings.url }}"> 
+                              {% endif %}
+                                   {{ block.settings.title }} 
+                              {% if block.settings.url != blank %}    
+                                </a>
+                              {% endif %} 
+                          </h2>
+                      </div>
+                  </div>
+                  {% endfor %}
+              </div>
+          </div>
+      </section>
+
       </aside>
+
+      
+
     {%- endif -%}
 
     <div class="product-grid-container" id="ProductGridContainer">
@@ -124,12 +151,6 @@
                 <li class="grid__item">
                   {% render 'custom-product-card',
                     card_product: product,
-                    media_aspect_ratio: section.settings.image_ratio,
-                    show_secondary_image: section.settings.show_secondary_image,
-                    show_vendor: section.settings.show_vendor,
-                    show_rating: section.settings.show_rating,
-                    lazy_load: lazy_load,
-                    show_quick_add: section.settings.enable_quick_add,
                     section_id: section.id
 
                   %}
@@ -177,51 +198,6 @@
     {
       "type": "header",
       "content": "t:sections.main-collection-product-grid.settings.header__3.content"
-    },
-    {
-      "type": "select",
-      "id": "image_ratio",
-      "options": [
-        {
-          "value": "adapt",
-          "label": "t:sections.main-collection-product-grid.settings.image_ratio.options__1.label"
-        },
-        {
-          "value": "portrait",
-          "label": "t:sections.main-collection-product-grid.settings.image_ratio.options__2.label"
-        },
-        {
-          "value": "square",
-          "label": "t:sections.main-collection-product-grid.settings.image_ratio.options__3.label"
-        }
-      ],
-      "default": "adapt",
-      "label": "t:sections.main-collection-product-grid.settings.image_ratio.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_secondary_image",
-      "default": false,
-      "label": "t:sections.main-collection-product-grid.settings.show_secondary_image.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_vendor",
-      "default": false,
-      "label": "t:sections.main-collection-product-grid.settings.show_vendor.label"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_rating",
-      "default": false,
-      "label": "t:sections.main-collection-product-grid.settings.show_rating.label",
-      "info": "t:sections.main-collection-product-grid.settings.show_rating.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "enable_quick_add",
-      "default": false,
-      "label": "t:sections.main-collection-product-grid.settings.enable_quick_buy.label"
     },
     {
       "type": "header",
@@ -305,6 +281,32 @@
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
     }
+  ],
+  "blocks":
+  [
+      {
+         "name": "Banner",
+         "type": "banner",
+          "limit" : 3,
+         "settings":
+         [
+             {
+                  "type": "image_picker",
+                  "id": "image",
+                  "label": "Image"
+             },
+             {
+               "type": "text",
+               "id": "title",
+               "label": "Title"
+             },
+            {
+              "type": "url",
+              "id": "url",
+              "label": "URL"
+            }
+         ]
+      }    
   ]
 }
 {% endschema %}
