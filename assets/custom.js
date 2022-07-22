@@ -7,9 +7,11 @@ $(document).ready(function(){
   });
 })
 
-
-// remove visually hidden class form cart icon header
+setInterval(function(){
+  // remove visually hidden class form cart icon header
 $('#cart-icon-bubble').find('svg + span').removeClass('visually-hidden');
+}, 0);
+
 
 // select variants at homepage and collection page
 var varVal;
