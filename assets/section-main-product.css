@@ -1192,3 +1192,7 @@ a.product__text {
 {
 margin-bottom: 100px;
 }
+.global-media-settings
+{
+  border:none;
+}
