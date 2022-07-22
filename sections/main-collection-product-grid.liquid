@@ -123,10 +123,9 @@
               {%- endfor -%}
             </ul>
     
-            {%- if paginate.pages > 1 -%}
-              {% render 'pagination', paginate: paginate, anchor: '' %}
+            {%- if paginate.pages > 1 -%}              
               <div class="load-more">
-                  <a class="load-more__btn" onclick="shopMore()"> Shop All </a>
+                  <a class="load-more__btn" onclick="shopMore()"> <i class="fas fa-plus"></i> Shop All </a>
                   <span class="load-more__spinner"></span>
               </div>
             {%- endif -%}
