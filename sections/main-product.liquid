@@ -359,52 +359,7 @@
                 </variant-radios>
               {%- else -%}
                 <variant-selects class="no-js-hidden" data-section="{{ section.id }}" data-url="{{ product.url }}" {{ block.shopify_attributes }}>
-                  {% unless product.has_only_default_variant %}
-              {% for option in product.options_with_values %}
-                <label {% if option.name == 'default' %}class="label--hidden" {% endif %}for="SingleOptionSelector-{{ forloop.index0 }}">
-                  {{ option.name }}
-                </label>
-                {% assign option_position = forloop.index %}
-                <fieldset>
-                  {%- for value in option.values -%}
-                      <input type="radio" class="single-option-selector-{{ section.id }} "
-                        {% if option.selected_value == value %} checked="checked"{% endif %}
-                        value="{{ value | escape }}"
-                        data-index="option{{option_position}}"
-                        name="{{ option.name | handleize }}"
-                        id="SingleOptionSelector-{{option_position}}">
-                      <label for="SingleOptionSelector-{{ forloop.index0 }}">
-                        {{value}}
-                      </label>
-                  {%- endfor -%}
-                </fieldset>
-              {% endfor %}
-            {% endunless %}
-                {%- for option in product.options_with_values -%}
-                    {%  if option.name contains 'Type' %}
-                      {%- for value in option.values -%}
-                <div class="input-price-row">
-                    <div class="radio-container">
-                        <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}-{{ current_variant.id }}">
-                            <input type="radio"
-                                   {% if forloop.first %}checked="checked"{% endif %}
-                                   name="radio" 
-                                   id="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}-{{ current_variant.id }}" 
-                                   name="{{ option.name }}"
-                                   value="{{ value | escape }}"
-                                   data-inventory="{{ product.variants[forloop.index0].inventory_quantity }}"
-                                   >
-                            {{ value }}
-                            <span class="checkmark"></span>
-                        </label>
-                    </div>
-                    <div class="fearured-price">
-                        <h6 class="{% if current_variant.compare_at_price > 0 %}del-price{% endif %}"> {{ product.variants[forloop.index0].compare_at_price | money }} </h6>
-                        <h6 class="discount-price"> {{ product.variants[forloop.index0].price | money }} </h6>
-                    </div>
-                </div>
-				{%- endfor -%}	
-                      {% else %}
+                  {%- for option in product.options_with_values -%}
                     <div class="product-form__input product-form__input--dropdown">
                       <label class="form__label" for="Option-{{ section.id }}-{{ forloop.index0 }}">
                         {{ option.name }}
@@ -424,7 +379,6 @@
                         {% render 'icon-caret' %}
                       </div>
                     </div>
-                    {% endif %}
                   {%- endfor -%}
 
                   <script type="application/json">
