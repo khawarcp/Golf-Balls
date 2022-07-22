@@ -1,6 +1,6 @@
 
 {%- assign current_variant = product.selected_or_first_available_variant -%}
-
+{%- assign card_product = product -%}
     <div class="featured-product-col">
         <div class="featured-product-img">
             <a href="{{ card_product.url }}"> <img loading="lazy" alt="{{ card_product.title }}" src="{{ card_product.featured_image |  img_url: 'master' }}"> </a>
@@ -14,4 +14,5 @@
             <span> {{ card_product.metafields.descriptors.subtitle }} </span>
         </div>
     </div>
+
 
