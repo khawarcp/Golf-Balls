@@ -1300,6 +1300,28 @@ a.button:hover {
     color: #047835;
     text-transform: capitalize;
 }
+cart-remove-button .button svg path {
+    fill: #fff;
+}
+
+cart-remove-button .button:hover svg path {
+    fill: #000;
+}
+
+.cart-item__name:hover {
+    color: #000;
+}
+
+.cart-item__name {
+    color: #047835 !important;
+    font-weight: 700;
+}
+
+.cart-items thead th {
+    font-size: 16px;
+    color: #047835;
+    font-weight: 700;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
