@@ -1173,9 +1173,9 @@ label.facet-checkbox span {
     height: 40px;
     background-color: #000;
     width: 40px;
-    padding: 12px;
-    position:relative;
-    z-index:-1;
+    padding: 14px;
+    top: auto;
+    right: 0;
 }
 @media screen and (min-width:1400px){
     .container{
