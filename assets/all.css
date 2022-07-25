@@ -1334,6 +1334,7 @@ button#checkout {
 .featured-product-img a {
     display: block;
 }
+
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
@@ -1898,5 +1899,8 @@ a.footer-logo img {
 
 .golfball-grading {
     padding: 60px 0px 0px;
+}
+.facets-container {
+    margin-bottom: 20px;
 }  
 }
