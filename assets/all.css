@@ -1250,7 +1250,9 @@ fieldset.js.product-form__input {
 .product-form__buttons.count-add-to-cart button {
     padding: 10px 35px;
 }
-
+.product-form__buttons.count-add-to-cart button:hover span {
+    color: #047835 !important;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
