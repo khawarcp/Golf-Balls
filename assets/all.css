@@ -1095,6 +1095,9 @@ label.facet-checkbox span {
 .newsletter-sec {
     margin: 0px;
 }
+.template-index .newsletter-sec {
+    margin-top: -40px;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
