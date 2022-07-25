@@ -1563,6 +1563,10 @@ footer {
 }
 .golf-grade-list ul {
     min-height: 336px;
+}
+.office-store-map-row {
+    width: 100%;
+    justify-content: space-between;
 }  
 }
 @media screen and (max-width:767px){
