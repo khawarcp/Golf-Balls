@@ -1169,7 +1169,14 @@ label.facet-checkbox span {
 .product-form__input.product-form__input--dropdown select > div {
     margin: 0;
 }
-
+.product-form__input .select svg {
+    height: 40px;
+    background-color: #000;
+    width: 40px;
+    padding: 12px;
+    position:relative;
+    z-index:-1;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
