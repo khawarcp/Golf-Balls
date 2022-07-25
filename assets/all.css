@@ -1230,9 +1230,9 @@ p.product__text.subtitle {
 }
 
 .product-form__input input[type=radio]+label {
-    padding: 0px;
-    margin: 0px;
-    padding-left: 23px;
+    padding: 0px !important;
+    margin: 0px !important;
+    padding-left: 23px !important;
 }
 
 .product-form__input input[type=radio] {
