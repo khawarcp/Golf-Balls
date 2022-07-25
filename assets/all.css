@@ -1180,6 +1180,16 @@ label.facet-checkbox span {
 .product-form__input .select svg path{
   fill:#fff;
 }
+nav.breadcrumb a,nav.breadcrumb span {
+    color: #047835;
+    font-size: 13px;
+    font-family: 'Roboto';
+    font-weight: 400;
+}
+
+nav.breadcrumb {
+    align-items: center;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
