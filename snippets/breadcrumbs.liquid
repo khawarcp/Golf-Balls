@@ -6,7 +6,7 @@
 
   {% if template contains 'page' %}
 
-    <span aria-hidden="true">&rsaquo;&rsaquo;</span>
+    <span aria-hidden="true">>></span>
 
     <span>{{ page.title }}</span>
 
@@ -14,7 +14,7 @@
 
     {% if collection.url %}
 
-      <span aria-hidden="true">&rsaquo;&rsaquo;</span>
+      <span aria-hidden="true">>></span>
 
       {{ collection.title | link_to: collection.url }}
 
