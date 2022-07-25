@@ -1110,6 +1110,65 @@ label.facet-checkbox span {
     height: 100%;
 }
 
+.product__info-container.product__info-container--sticky .price__regular .price-item {
+    color: #3e3e3e;
+    letter-spacing: 0px;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Roboto';
+}
+
+.product-form__input.product-form__input--dropdown {
+    border: 0px;
+}
+
+.product-form__input.product-form__input--dropdown {
+    display: flex;
+    align-items: center;
+}
+
+.product-form__input .select {
+    max-width: calc(100% - 70px);
+    margin-left: auto;
+    border: 1px solid #e3e3e3;
+    outline: 0px;
+}
+
+.product-form__input.product-form__input--dropdown select {
+    border: 0px;
+    outline: 0px;
+    padding-left: 5px;
+    color: #231f20;
+    font-size: 14px;
+    min-height: auto;
+    line-height: initial;
+    margin: 0;
+    height: 40px;
+}
+
+.product-form__input .select::before {
+    opacity: 0;
+}
+
+.product-form__input .select::after {
+    opacity: 0;
+}
+
+.product-form__input.product-form__input--dropdown select:focus {
+    box-shadow: none;
+}
+
+.product-form__input.product-form__input--dropdown .form__label {
+    color: #3e3e3e;
+    font-weight: 700;
+    font-family: 'Roboto';
+    font-size: 14px;
+    margin: 0px;
+}
+
+.product-form__input.product-form__input--dropdown select > div {
+    margin: 0;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
