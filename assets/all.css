@@ -1105,7 +1105,10 @@ label.facet-checkbox span {
 .brand-logo:hover img {
     filter: invert(33%) sepia(18%) saturate(2412%) hue-rotate(97deg) brightness(99%) contrast(97%);
 }
-
+.thumbnail.global-media-settings img {
+    object-fit: cover;
+    height: 100%;
+}
 
 @media screen and (min-width:1400px){
     .container{
