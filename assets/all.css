@@ -1098,6 +1098,18 @@ label.facet-checkbox span {
 .template-index .newsletter-sec {
     margin-top: -40px;
 }
+.brand-logo img {
+    filter: invert(21%) sepia(0%) saturate(1%) hue-rotate(143deg) brightness(100%) contrast(86%);
+}
+
+.brand-logo:hover img {
+    filter: invert(9%) sepia(97%) saturate(7113%) hue-rotate(160deg) brightness(102%) contrast(97%);
+}
+
+.brand-logo:nth-child(3):hover img {
+    filter: none;
+}
+
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
