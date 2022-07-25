@@ -1561,6 +1561,9 @@ footer {
 .newsletter-title-col h5 {
     text-align: center;
 }
+.golf-grade-list ul {
+    min-height: 336px;
+}  
 }
 @media screen and (max-width:767px){
   .announcment-bar-flex {
