@@ -1194,6 +1194,12 @@ nav.breadcrumb span:nth-child(2) {
     color: #000;
     margin: 0px 3px;
 }
+p.product__text.subtitle {
+    color: #3e3e3e;
+    font-size: 16px;
+    letter-spacing: 0px;
+    font-family: 'Roboto';
+}
 
 @media screen and (min-width:1400px){
     .container{
