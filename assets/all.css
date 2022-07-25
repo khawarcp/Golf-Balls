@@ -1128,7 +1128,7 @@ label.facet-checkbox span {
 }
 
 .product-form__input .select {
-    max-width: calc(100% - 70px);
+    max-width: calc(100% - 70px) !important;
     margin-left: auto;
     border: 1px solid #e3e3e3;
     outline: 0px;
@@ -1169,6 +1169,7 @@ label.facet-checkbox span {
 .product-form__input.product-form__input--dropdown select > div {
     margin: 0;
 }
+
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
