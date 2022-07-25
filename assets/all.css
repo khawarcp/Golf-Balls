@@ -1331,6 +1331,9 @@ button#checkout {
     padding: 10px 20px;
     outline: 0px;
 }
+.featured-product-img a {
+    display: block;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
