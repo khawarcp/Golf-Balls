@@ -1177,6 +1177,9 @@ label.facet-checkbox span {
     top: auto;
     right: 0;
 }
+.product-form__input .select svg path{
+  fill:#fff;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
