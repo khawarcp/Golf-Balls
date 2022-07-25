@@ -1902,5 +1902,13 @@ a.footer-logo img {
 }
 .facets-container {
     margin-bottom: 20px;
+}
+.grid--3-col-desktop .grid__item {
+    width: 48%;
+    max-width: 48%;
+}
+
+ul#product-grid {
+    justify-content: space-between;
 }  
 }
