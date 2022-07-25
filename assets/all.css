@@ -958,9 +958,9 @@ p.f-copywrite {
     border-color: #047835;
 }
 .cart-count-bubble {
-    /* display: none; */
     left: 7px;
     background-color: #fff;
+    margin-left: 3px;
 }
 
 .product__variants_list{
