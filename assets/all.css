@@ -1463,6 +1463,9 @@ h4 {
 
 ul#product-grid {
     justify-content: space-between;
+}
+.button--tertiary {
+    font-size: 12px !important;
 }  
 }
 @media screen and (max-width:991px){
