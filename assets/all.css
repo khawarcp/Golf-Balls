@@ -1296,6 +1296,10 @@ a.button:hover {
     color: #047835 !important;
     background-color: #fff;
 }
+.customer.register h1 {
+    color: #047835;
+    text-transform: capitalize;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
