@@ -1322,6 +1322,15 @@ cart-remove-button .button:hover svg path {
     color: #047835;
     font-weight: 700;
 }
+
+button#checkout {
+    background-color: #047835;
+    font-weight: 500;
+    color: #fff!important;
+    font-size: 15px;
+    padding: 10px 20px;
+    outline: 0px;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
