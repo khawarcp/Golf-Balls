@@ -20,13 +20,13 @@
 
     {% endif %}
 
-    <span aria-hidden="true">&rsaquo;</span>
+    <span aria-hidden="true">>></span>
 
     <span>{{ product.title }}</span>
 
   {% elsif template contains 'collection' and collection.handle %}
 
-    <span aria-hidden="true">&rsaquo;</span>
+    <span aria-hidden="true">>></span>
 
     {% if current_tags %}
 
@@ -34,7 +34,7 @@
 
       {{ collection.title | link_to: url }}
 
-      <span aria-hidden="true">&rsaquo;</span>
+      <span aria-hidden="true">>></span>
 
       <span>{{ current_tags | join: " + " }}</span>
 
