@@ -1334,10 +1334,6 @@ button#checkout {
 .featured-product-img a {
     display: block;
 }
-.grid--3-col-desktop .grid__item {
-    width: 100%;
-    max-width: 100%;
-}
 
 @media screen and (min-width:1400px){
     .container{
@@ -1925,5 +1921,8 @@ a.footer-logo img {
 .facets-container {
     margin-bottom: 20px;
 }
-  
+.grid--3-col-desktop .grid__item {
+    width: 100%;
+    max-width: 100%;
+}  
 }
