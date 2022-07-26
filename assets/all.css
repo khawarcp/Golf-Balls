@@ -1367,6 +1367,9 @@ button#checkout {
     position: absolute;
     top: 19px;
 }
+.active-facets {
+    grid-column: 1;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
