@@ -1361,6 +1361,12 @@ button#checkout {
 .facets__summary:hover span {
     text-decoration: none !important;
 }
+.facets-container summary.facets__summary span.facets__selected {
+    font-size: 20px;
+    margin-left: 3px;
+    position: absolute;
+    top: 19px;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
