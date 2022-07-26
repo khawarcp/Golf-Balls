@@ -1354,6 +1354,13 @@ button#checkout {
 .featured-product-content h5 a {
     text-transform: uppercase;
 }
+.facets__disclosure[open] .facets__summary, .facets__summary:hover {
+    text-decoration: none;
+}
+
+.facets__summary:hover span {
+    text-decoration: none;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
