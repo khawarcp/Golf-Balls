@@ -1371,6 +1371,9 @@ button#checkout {
     position: absolute;
     right: 10px;
 }
+.related-product-wrapper.grid__item {
+    margin-top: 25px;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
