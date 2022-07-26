@@ -1344,6 +1344,13 @@ button#checkout {
     height: 100%;
     object-fit: cover;
 }
+.related-product-wrappe .featured-product-img a {
+    height: auto;
+}
+
+.related-product-wrapper.grid__item .featured-product-img a {
+    height: auto;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
