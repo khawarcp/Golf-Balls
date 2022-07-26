@@ -1479,7 +1479,8 @@ ul#product-grid {
 .featured-product-img a {
     width: 100%;
     height: 250px;
-}  
+}
+  
 }
 @media screen and (max-width:991px){
   .home-text {
@@ -1580,6 +1581,22 @@ footer {
 .office-store-map-row {
     width: 100%;
     justify-content: space-between;
+}
+.collection-hero__title {
+    font-size: 20px;
+}
+
+.collection--breadcrumb ul li, .collection--breadcrumb ul li a i, .collection--breadcrumb ul li, .collection--breadcrumb ul li a {
+    font-size: 10px;
+}
+
+.grid--3-col-desktop .grid__item {
+    width: 100%;
+    max-width: 100%;
+}
+
+.featured-product-img a {
+    height: 300px;
 }  
 }
 @media screen and (max-width:767px){
