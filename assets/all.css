@@ -1924,5 +1924,16 @@ a.footer-logo img {
 .grid--3-col-desktop .grid__item {
     width: 100%;
     max-width: 100%;
+}
+.collection-hero__title {
+    font-size: 17px;
+}
+
+.collection--breadcrumb ul li, .collection--breadcrumb ul li a i, .collection--breadcrumb ul li, .collection--breadcrumb ul li a {
+    font-size: 10px;
+}
+
+.collection--breadcrumb ul li span i {
+    font-size: 8px;
 }  
 }
