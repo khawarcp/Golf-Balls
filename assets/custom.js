@@ -39,3 +39,5 @@ $('.input-price-row').each(function(){
   }
 });
 
+
+
