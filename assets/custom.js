@@ -42,3 +42,17 @@ $('.input-price-row').each(function(){
   }
 });
 
+
+// quantity error on custom product cards
+$('.card-submit').on('click',function(e){
+    e.preventDefault();
+    var formSub = $(this).closest('form');
+    var inputQuant = parseInt($(this).siblings('#quantity').val());
+    var checkedQuant = formSub.find('input:checked').data('inventory');
+
+    if(inputQuant > checkedQuant){
+        formSub.find('.quantity-error').text(`You can add quantity more ${checkedQuant}`);
+    }else{
+        formSub.submit();
+    }
+});
