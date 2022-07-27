@@ -51,7 +51,7 @@ $('.card-submit').on('click',function(e){
     var checkedQuant = formSub.find('input:checked').data('inventory');
 
     if(inputQuant > checkedQuant){
-        formSub.find('.quantity-error').text(`You cannot add quantity more than ${checkedQuant}`);
+        formSub.find('.quantity-error').text(`You cannot add more than ${checkedQuant} items`);
     }else{
         formSub.submit();
     }
@@ -65,7 +65,7 @@ $('.card-submit-access').on('click',function(e){
     var checkedQuantAcess = formSub.find('input[name=id]').data('access-quantity');
 
     if(inputQuantAccess > checkedQuantAcess){
-        formSub.find('.quantity-error').text(`You cannot add quantity more than ${checkedQuantAcess}`);
+        formSub.find('.quantity-error').text(`You cannot add more than ${checkedQuantAcess} items`);
     }else{
         formSub.submit();
     }
