@@ -15,16 +15,16 @@
         <div class="featured-product-content">
              <h5> <a href="{{ card_product.url }}"> {{ card_product.title }} </a> </h5>
             <span> {{ card_product.metafields.descriptors.subtitle }} </span>            
-            <form method="post" action="/cart/add">
+          
               {%- render 'price', product: card_product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
-              <input type="hidden" name="id" value="{{ card_product.variants.first.id }}" />            
+                        
                 <div class="count-add-to-cart">
                     <input type="number" autocomplete="off" id="quantity" name="quantity" min="1" value="1">
                     <button type="submit" class="custom-site-btn">
                         ADD TO CART
                     </button>
                 </div>
-            </form>
+            
         </div>
     </div>
     {% unless template contains 'collection' or template contains 'search' %}   
