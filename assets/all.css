@@ -2019,5 +2019,9 @@ a.footer-logo img {
     position: absolute;
     right: 10px;
 }
+.brand-logo {
+    display: block;
+    width: 100%;
+}  
   
 }
