@@ -18,9 +18,9 @@
             <form method="post" action="/cart/add">
               <input type="hidden" name="id" data-access-quantity="{{ card_product.variants.first.inventory_quantity }}" value="{{ card_product.variants.first.id }}" />            
               {%- render 'price', product: card_product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
-              <p class="quantity-error"></p>
+              
                 <div class="count-add-to-cart">
-                    
+                    <p class="quantity-error"></p>
                     <input type="number" autocomplete="off" id="quantity" name="quantity" min="1" value="1">
                     <button type="submit" class="custom-site-btn card-submit-access">
                         ADD TO CART
