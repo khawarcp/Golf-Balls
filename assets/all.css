@@ -446,7 +446,8 @@ h5 {
 }
 
 .radio-container input {
-    opacity: 1;
+    accent-color: #047835;
+    margin-right: 4px;
 }
 
 .radio-container .checkmark {
