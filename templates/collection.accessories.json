@@ -10,6 +10,37 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid-accessories",
+      "blocks": {
+        "ab1d6808-b6ec-447e-a003-4eae993c738c": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/golf-ball-grades.png",
+            "title": "GOLF BALL GRADES",
+            "url": "shopify:\/\/collections\/golf-balls"
+          }
+        },
+        "a58fd9bf-c1c6-46b2-9abf-b3a585c494db": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/shop-accessories.png",
+            "title": "SHOP ACCESSORIES",
+            "url": "shopify:\/\/collections\/accessories"
+          }
+        },
+        "a59de343-e799-4e1d-a289-f70afa31c16c": {
+          "type": "banner",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/sell-golf.png",
+            "title": "SELL YOUR GOLF BALLS",
+            "url": "shopify:\/\/pages\/we-buy-golfballs"
+          }
+        }
+      },
+      "block_order": [
+        "ab1d6808-b6ec-447e-a003-4eae993c738c",
+        "a58fd9bf-c1c6-46b2-9abf-b3a585c494db",
+        "a59de343-e799-4e1d-a289-f70afa31c16c"
+      ],
       "settings": {
         "products_per_page": 15,
         "columns_desktop": 3,
