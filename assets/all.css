@@ -2043,5 +2043,13 @@ a.footer-logo img {
     width: 90%;
     margin:auto;
 }  
+  .featured-product-img {
+    position: static;
+}
+
+ul#product-grid {
+    position: relative;
+    z-index: -1;
+}
   
 }
