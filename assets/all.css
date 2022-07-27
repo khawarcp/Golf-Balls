@@ -1395,7 +1395,7 @@ body.gradient.template-collection.accessories .price.price--large {
 }
 p.quantity-error {
     position: absolute;
-    top: -30px;
+    top: -32px;
     margin-top: 10px;
     font-size: 12px;
     color: #f31c25;
