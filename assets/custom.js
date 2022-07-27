@@ -19,7 +19,7 @@ var replaceId;
 $('.input-price-row').find('input[type=radio]').on('change', function(){
     varVal = $(this).val();
 
-  $('.radio-container input').removeAttr('checked');
+   $(this).closest('form').find('.radio-container input').removeAttr('checked');
       $(this).attr('checked', 'checked');
     $(this).closest('form').find('.variants-list-items').each(function(){
         var masterVal = $(this).text();
