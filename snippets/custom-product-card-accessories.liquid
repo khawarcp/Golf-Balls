@@ -16,8 +16,9 @@
              <h5> <a href="{{ card_product.url }}"> {{ card_product.title }} </a> </h5>
             <span> {{ card_product.metafields.descriptors.subtitle }} </span>            
             <form method="post" action="/cart/add">
-              {%- render 'price', product: card_product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
               <input type="hidden" name="id" data-access-quantity="{{ card_product.variants.first.inventory_quantity }}" value="{{ card_product.variants.first.id }}" />            
+              {%- render 'price', product: card_product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
+              
                 <div class="count-add-to-cart">
                     <p class="quantity-error"></p>
                     <input type="number" autocomplete="off" id="quantity" name="quantity" min="1" value="1">
