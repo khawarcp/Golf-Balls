@@ -4,7 +4,7 @@
             <div class="our-brand-title">
                 <h5> {{ section.settings.heading }}  <img src="{{ 'our-brand-arrow.png' | asset_img_url: 'master' }}" loading="lazy" alt="our-brand-arrow"></h5>
             </div>
-            <div class="our-brands-logos-row">
+            <div class="our-brands-logos-row owl-carousel">
                 {% for block in section.blocks %}                    
                 <div class="brand-logo">
                     {% if block.settings.brand_url != blank %}                        
