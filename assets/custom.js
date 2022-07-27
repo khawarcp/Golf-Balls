@@ -56,3 +56,17 @@ $('.card-submit').on('click',function(e){
         formSub.submit();
     }
 });
+
+// quantity error on custom accessories product cards
+$('.card-submit-access').on('click',function(e){
+    e.preventDefault();
+    var formSub = $(this).closest('form');
+    var inputQuantAccess = parseInt($(this).siblings('#quantity').val());
+    var checkedQuantAcess = formSub.find('input[name=id]').data('access-quantity');
+
+    if(inputQuantAccess > checkedQuantAcess){
+        formSub.find('.quantity-error').text(`You can add quantity more ${checkedQuantAcess}`);
+    }else{
+        formSub.submit();
+    }
+});
