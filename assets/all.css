@@ -1381,7 +1381,14 @@ button#checkout {
 body.gradient.template-collection.accessories .price.price--large {
     text-align: center;
 }
+.brand-logo img {
+    width: auto !important;
+}
 
+.our-brands-logos-row.owl-carousel .owl-stage {
+    display: flex;
+    align-items: center;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
