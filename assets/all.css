@@ -1024,12 +1024,12 @@ section.shop-golf-balls.shop-page {
     background-color: transparent;
 }
 
+section.shop-golf-balls.shop-page .golfball-col h2 a,
 section.shop-golf-balls.shop-page .golfball-col h2 {
     font-size: 25px;
 }
 
-.golfball-col {}
-
+section.shop-golf-balls.shop-page .golfball-col h2 a,
 section.shop-golf-balls.shop-page .golfball-col {
     margin-bottom: 20px;
 }
