@@ -1380,6 +1380,11 @@ button#checkout {
 .grid__item.product__media-wrapper {
     position: relative;
 }
+
+body.gradient.template-collection.accessories .price.price--large {
+    text-align: center;
+}
+
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
