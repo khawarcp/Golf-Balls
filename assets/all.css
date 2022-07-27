@@ -1655,6 +1655,16 @@ footer {
 .featured-product-img a {
     height: 300px;
 }  
+
+  section.shop-golf-balls.shop-page {
+    display: none;
+}
+
+.facets-container {
+    position: sticky;
+    top: 0px;
+}
+  
 }
 @media screen and (max-width:767px){
   .announcment-bar-flex {
