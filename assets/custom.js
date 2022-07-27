@@ -18,6 +18,7 @@ var varVal;
 var replaceId;
 $('.input-price-row').find('input[type=radio]').on('change', function(){
     varVal = $(this).val();
+    $(this).attr('checked', 'checked');
     $(this).closest('form').find('.variants-list-items').each(function(){
         var masterVal = $(this).text();
         
