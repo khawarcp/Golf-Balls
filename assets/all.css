@@ -1389,6 +1389,9 @@ body.gradient.template-collection.accessories .price.price--large {
     display: flex;
     align-items: center;
 }
+.template-search .price.price--large.price--show-badge {
+    text-align: center;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
