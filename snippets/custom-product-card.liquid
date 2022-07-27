@@ -1,7 +1,7 @@
 
 {%- assign current_variant = card_product.selected_or_first_available_variant -%}
 
-{% unless template contains 'collection' %}
+{% unless template contains 'collection' or template contains 'search' %}
 <div class="col-md-3">
   {% endunless %}
     <div class="featured-product-col">
