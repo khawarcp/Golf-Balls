@@ -18,6 +18,7 @@ var varVal;
 var replaceId;
 $('.input-price-row').find('input[type=radio]').on('change', function(){
     varVal = $(this).val();
+  alert(varVal);
     $(this).closest('form').find('.variants-list-items').each(function(){
         var masterVal = $(this).text();
         
@@ -38,6 +39,4 @@ $('.input-price-row').each(function(){
      inputRow.find('.fearured-price').html('<h6>Out of Stock</h6>');
   }
 });
-
-
 
