@@ -20,14 +20,11 @@
               {%- render 'price', product: card_product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
               
                 <div class="count-add-to-cart">
-                    
+                    <p class="quantity-error"></p>
                     <input type="number" autocomplete="off" id="quantity" name="quantity" min="1" value="1">
                     <button type="submit" class="custom-site-btn card-submit-access">
                         ADD TO CART
                     </button>
-                </div>
-                <div>
-                  <p class="quantity-error"></p>
                 </div>
             </form>
         </div>
