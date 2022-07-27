@@ -536,7 +536,9 @@ span.sale-product {
     position: relative;
 }
 
-
+section.shop-golf-balls.shop-page .golfball-col h2 a{
+  color : #fff;
+}
 .golfball-col h2 {
     text-align: center;
     color: #fff;
