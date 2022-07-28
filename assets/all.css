@@ -1664,6 +1664,10 @@ footer {
     position: sticky;
     top: 0px;
 }
+
+  p.quantity-error {
+    font-size: 10px;
+  }
   
 }
 @media screen and (max-width:767px){
