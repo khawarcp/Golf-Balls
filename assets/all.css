@@ -2062,7 +2062,6 @@ a.footer-logo img {
 
 ul#product-grid {
     position: relative;
-    z-index: -1;
 }
 span.sale-product {
     top: 10px;
