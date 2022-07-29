@@ -1401,6 +1401,9 @@ p.quantity-error {
     color: #f31c25;
     font-weight: bold;
 }
+.featured-product-col {
+    position: relative;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
