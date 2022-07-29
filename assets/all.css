@@ -540,7 +540,7 @@ span.sale-product {
 section.shop-golf-balls.shop-page .golfball-col h2 a{
   color : #fff;
 }
-.golfball-col h2 {
+.golfball-col h2 a {
     text-align: center;
     color: #fff;
     font-style: italic;
@@ -549,6 +549,7 @@ section.shop-golf-balls.shop-page .golfball-col h2 a{
     margin: auto;
     font-size: 38px;
     padding: 35px;
+    display: block;
 }
 
 .golfball-col {
