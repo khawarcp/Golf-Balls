@@ -2072,5 +2072,29 @@ span.sale-product {
 
 .golfball-col h2 {
     margin: auto;
+}
+.featured-product-col {
+    position: static;
+}
+
+span.sale-product {
+    display: none;
+}
+
+.radio-container label {
+    position: static;
+}
+
+.count-add-to-cart {
+    position: static;
+}
+
+.count-add-to-cart input {
+    position: static;
+}
+
+.count-add-to-cart {
+    margin-top: 30px;
+    padding-bottom: 20px;
 }  
 }
