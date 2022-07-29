@@ -1674,7 +1674,10 @@ footer {
   }
  .golfball-col h2 a {
     font-size: 22px;
-} 
+}
+.brand-logo {
+    width: 100%;
+}  
 }
 @media screen and (max-width:767px){
   .announcment-bar-flex {
