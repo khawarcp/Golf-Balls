@@ -1672,7 +1672,9 @@ footer {
   p.quantity-error {
     font-size: 10px;
   }
-  
+ .golfball-col h2 a {
+    font-size: 22px;
+} 
 }
 @media screen and (max-width:767px){
   .announcment-bar-flex {
