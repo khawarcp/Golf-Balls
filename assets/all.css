@@ -1405,6 +1405,13 @@ p.quantity-error {
 .featured-product-col {
     position: relative;
 }
+header .container {
+    max-width: 1250px;
+}
+
+.navigation ul li a {
+    margin-right: 20px;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
