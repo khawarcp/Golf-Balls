@@ -5,6 +5,7 @@ $(document).ready(function(){
     $("body").toggleClass("overflow");
     $(this).toggleClass("active");
   });
+  $('#FacetsWrapperDesktop details').attr('open','');
 })
 
 setInterval(function(){
