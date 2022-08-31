@@ -99,6 +99,8 @@
     "cart_type": "notification",
     "show_vendor": false,
     "show_cart_note": false,
+    "checkout_accent_color": "#047835",
+    "checkout_button_color": "#047835",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
