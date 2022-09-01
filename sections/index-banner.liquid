@@ -1,3 +1,30 @@
+<div class="banner-slider owl-carousel">
+  {% for block in section.blocks %}
+ <section class="home-banner" loading="lazy" style="background-image: url('{{ section.settings.banner_image | img_url : 'master' }}')">
+    <div class="container">
+          
+              <div class="home-text">
+                {% if block.settings.logo_image != blank %}                
+                    <img src="{{ block.settings.logo_image | img_url: 'master' }}" loading="lazy" alt="{{ block.settings.logo_image.alt }}" class="titleist">
+                {% endif %}
+                <h4> {{ block.settings.banner_subtitle }} </h4>
+                <h1> {{ block.settings.banner_title }} </h1>
+                <div class="home-btn">
+                    {% if block.settings.banner_button_text != blank %}                    
+                    <a href="{{ block.settings.banner_button_link }}" class="custom-site-btn">
+                        {{ block.settings.banner_button_text }}
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
+          
+        </div>
+
+   </section>
+    {% endfor %}
+</div>
+
+{% comment %}
 <section class="home-banner" loading="lazy" style="background-image: url('{{ section.settings.banner_image | img_url : 'master' }}')">
     <div class="container">
         <div class="home-text">
@@ -16,7 +43,7 @@
         </div>
     </div>
 </section>
-
+{% endcomment %}
 {% schema %}
 {
    "name": "Banner",
