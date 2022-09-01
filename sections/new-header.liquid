@@ -72,7 +72,6 @@
               <ul>
               {% for childlink in link.links %}
                  <li> <a href="{{ childlink.url }}"> {{ childlink.title }} </a>
-
                    {% if childlink.links != blank %}
                      <ul>
                       {% for grandchild in childlink.links %}
