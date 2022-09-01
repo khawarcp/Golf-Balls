@@ -1549,7 +1549,7 @@ ul.sub-menu {
 
 .performance-gloves.symmetry h2, .performance-gloves.symmetry h3 {
 /*     color: white; */
-    text-transform: upperase;
+    text-transform: uppercase;
 }
 
 @media screen and (min-width:1400px){
