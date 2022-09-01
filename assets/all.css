@@ -1196,10 +1196,15 @@ nav.breadcrumb a,nav.breadcrumb span {
 nav.breadcrumb {
     align-items: center;
 }
-nav.breadcrumb span:nth-child(2) {
+nav.breadcrumb span{
     color: #000;
     margin: 0px 3px;
 }
+
+nav.breadcrumb span:last-child {
+    margin: 0px;
+}
+
 p.product__text.subtitle {
     color: #3e3e3e;
     font-size: 16px;
