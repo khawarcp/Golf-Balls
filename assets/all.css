@@ -2154,5 +2154,12 @@ span.sale-product {
 .count-add-to-cart {
     margin-top: 30px;
     padding-bottom: 20px;
+}
+.footer__payment.new ul li svg {
+    width: 25px;
+}
+
+.footer__payment.new ul li {
+    margin: 2px;
 }  
 }
