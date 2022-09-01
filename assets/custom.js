@@ -6,8 +6,8 @@ $(document).ready(function(){
     $(this).toggleClass("active");
   });
   $('#FacetsWrapperDesktop details').attr('open','');
-  $('.mega-menu-col h6').click(function (e) {
-      $('.mega-menu-col').find('ul').slideUp();
+  $('.submenu-toggle-click.has-submenu>h5>a').click(function (e) {
+      $('.sub-menu').find('ul').slideUp();
       $(this).parent().find('ul').slideDown();
 
       return false;
