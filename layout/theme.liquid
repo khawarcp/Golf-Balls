@@ -332,6 +332,29 @@
             }
         })
 
+      $('.banner-slider.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 0,
+            dots: false,
+            nav: false,
+            autoplay: false,
+            autoplayTimeout: 2000,
+            smartSpeed: 800,
+            thumbs: false,
+            items: 5,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5
+                }
+            }
+        })
+
     </script>
     
   </body>
