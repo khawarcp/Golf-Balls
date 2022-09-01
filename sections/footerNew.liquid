@@ -50,7 +50,7 @@
         </div>
             
         {%- if section.settings.payment_enable -%}
-          <div class="footer__payment">
+          <div class="footer__payment new">
             <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
             <ul class="list list-payment" role="list">
               {%- for type in shop.enabled_payment_types -%}
