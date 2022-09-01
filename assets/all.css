@@ -1550,6 +1550,11 @@ ul.sub-menu {
 .performance-gloves.symmetry h2, .performance-gloves.symmetry h3 {
 /*     color: white; */
     text-transform: uppercase;
+      font-style: unset;
+}
+
+performance-gloves.symmetry h2 {
+    margin-bottom: 10px;
 }
 
 .performance-gloves h3 {
