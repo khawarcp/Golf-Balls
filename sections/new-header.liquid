@@ -72,7 +72,7 @@
               <div class="submenu-main">
               {% for childlink in link.links %}
 
-                <div class="{% if childlink.links != blank %}submenu-toggle-click {% endif %}">
+                <div class="submenu-toggle-click {% if childlink.links != blank %} has-submenu {% endif %}">
                 <h5><a href="{{ childlink.url }}"> {{ childlink.title }} </a> 
                   {% if childlink.links != blank %}
                   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6">
