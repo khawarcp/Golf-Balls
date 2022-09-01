@@ -1537,6 +1537,11 @@ ul.sub-menu {
     left: 0px;
     right: 0px;
 }
+
+.performance-gloves.symmetry {
+    width: 31%;
+}
+  
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
