@@ -492,8 +492,8 @@ h5 {
 
 span.sale-product {
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 10px;
+    right: 10px;
     width: 38px;
     z-index: 9;
 }
