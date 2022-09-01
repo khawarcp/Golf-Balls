@@ -7,9 +7,8 @@ $(document).ready(function(){
   });
   $('#FacetsWrapperDesktop details').attr('open','');
   $('.submenu-toggle-click.has-submenu>h5>a').click(function (e) {
-      $('.sub-menu').find('ul').slideUp();
-      $(this).parent().find('ul').slideDown();
-
+      $(this).parent().find('.sub-menu').slideToggle();
+      $(this).parent().siblings().children().next().slideUp();
       return false;
     });
 })
