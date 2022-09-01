@@ -70,20 +70,26 @@
           <li class="{% if link.active %}active{% endif %}"><a href="{{ link.url }}">{{ link.title }}</a>
             {% if link.links != blank %}
               <div class="submenu-main">
-              <ul>
               {% for childlink in link.links %}
-                 <li> <a href="{{ childlink.url }}"> {{ childlink.title }} </a>
+
+                <div class="submenu-toggle-click">
+                <h5><a href="{{ childlink.url }}"> {{ childlink.title }} </a> 
+                  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+                    </path>
+                  </svg>
+                </h5>
                    {% if childlink.links != blank %}
-                     <ul>
-                      {% for grandchild in childlink.links %}
-                        <li><a href="{{ grandchild.url }}"> {{ grandchild.title }} </a></li>
-                      {% endfor %}
-                     </ul>
-                    {% endif %}
-                 </li>                               
+                   <ul class="sub-menu">
+                     {% for grandchild in childlink.links %}
+                 <li><a href="{{ grandchild.url }}"> {{ grandchild.title }} </a></li>
+                       {% endfor %}
+                </ul>
+                     {% endif %}
+                </div>          
               {% endfor %}
-              </ul>
-              </ul>
+         
+              </div>
             {% endif %}
             
           </li>
