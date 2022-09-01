@@ -1526,6 +1526,17 @@ ul.sub-menu {
 .navigation ul li a:hover {
     color: #000;
 }
+.featured-product-content form {
+    min-height: 135px;
+    position: relative;
+}
+
+.count-add-to-cart {
+    position: absolute;
+    top: 110px;
+    left: 0px;
+    right: 0px;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
