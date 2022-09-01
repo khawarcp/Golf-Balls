@@ -1541,7 +1541,10 @@ ul.sub-menu {
 
 .performance-gloves.symmetry {
     width: 31%;
-    text-align: center;
+        display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
   
 @media screen and (min-width:1400px){
