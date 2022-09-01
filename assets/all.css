@@ -2277,5 +2277,13 @@ span.sale-product {
 .performance-gloves.symmetry {
     width: 100%;
 }
+
+  .performance-gloves.symmetry h2 {
+    font-size: 35px;
+}
+
+.performance-gloves.symmetry h3 {
+    font-size: 18px;
+}
   
 }
