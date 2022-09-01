@@ -69,8 +69,47 @@
           {% for link in linklists[section.settings.main_menu].links %}
           <li class="{% if link.active %}active{% endif %}"><a href="{{ link.url }}">{{ link.title }}</a>
             {% if link.links != blank %}
+              <ul>
               {% for childlink in link.links %}
-                <div class="submenu-main">
+                 <li> <a href="{{ childlink.url }}"> {{ childlink.title }} </a>
+
+                   {% if childlink.links != blank %}
+                     <ul>
+                      {% for grandchild in childlink.links %}
+                        <a href="{{ grandchild.url }}"> {{ grandchild.title }} </a>
+                      {% endfor %}
+                     </ul>
+                    {% endif %}
+                 </li>                               
+              {% endfor %}
+              </ul>
+            {% endif %}
+            
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="search-container">
+        <form role="search" action="{{ routes.search_url }}">
+          <div class="input-search">
+            <input type="search" name="q" value="{{ search.terms }}" placeholder="Search">
+            <button type="submit"><i class="fas fa-search"></i></button>
+          </div>
+        </form>
+        <div class="menu-bar">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+</header>
+
+
+<div class="submenu-main">
               <div class="submenu-toggle-click">
                 <h5>Titelist 
                   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6">
@@ -118,31 +157,7 @@
                 </ul>
               </div>
             </div>
-              {% endfor %}
-            {% endif %}
-            
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-      <div class="search-container">
-        <form role="search" action="{{ routes.search_url }}">
-          <div class="input-search">
-            <input type="search" name="q" value="{{ search.terms }}" placeholder="Search">
-            <button type="submit"><i class="fas fa-search"></i></button>
-          </div>
-        </form>
-        <div class="menu-bar">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </div>
 
-  </div>
-</div>
-</header>
 {% schema %}
   {
     "name": "Header",
