@@ -1519,7 +1519,13 @@ ul.sub-menu {
     flex-direction: column;
     display: none;
 }
+.navigation ul li.active>a {
+    border-bottom: 2px solid #000;
+}
 
+.navigation ul li a:hover {
+    color: #000;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
