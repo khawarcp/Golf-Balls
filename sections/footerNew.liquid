@@ -53,27 +53,15 @@
           <div class="footer__payment new">
             <span class="visually-hidden">{{ 'sections.footer.payment' | t }}</span>
             <ul class="list list-payment" role="list">
-              {% assign enabled_payment_types = 'visa,master,american_express,paypal,apple_pay,amazon_pay,google_pay' | remove: ' ' | split: ',' %}
+              {% assign enabled_payment_types = 'visa,master,american_express,paypal,apple_pay,amazon_pay,google_pay,discover' | remove: ' ' | split: ',' %}
                 {% for type in enabled_payment_types %}
                 <li class="list-payment__item">
                   {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
                 </li>
               {%- endfor -%}
             </ul>
-          </div>
-        {% else %}
-          <ul  class="pay-method"> 
-            <li><img src="" /></li>
-            <li><img src="" /></li>
-            <li><img src="" /></li>
-            <li><img src="" /></li>
-            <li><img src="" /></li>
-            <li><img src="" /></li>
-            <li><img src="" /></li>
-            <li><img src="" /></li>
-            <li><img src="" /></li>
-          </ul>
-        {%- endif -%}
+          </div>        
+          {% endif %}
         <p class="f-copywrite">&copy; {{ 'now' |  date : '%Y' }} All Right Reserved</p>
     </div>
 </footer>
