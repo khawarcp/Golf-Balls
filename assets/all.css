@@ -1438,7 +1438,25 @@ h1.main-page-title.page-title.h0 {
 .owl-carousel .owl-item img.titleist {
     width: 230px;
 }
+.footer__payment.new ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap:wrap;
+}
 
+.footer__payment.new ul li {
+    margin: 5px;
+}
+
+.footer__payment.new ul li svg {
+    width: 50px;
+    height: auto;
+}
+
+.footer__payment.new {
+    margin: 20px 0;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
