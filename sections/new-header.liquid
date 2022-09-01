@@ -68,7 +68,9 @@
         <ul>
           {% for link in linklists[section.settings.main_menu].links %}
           <li class="{% if link.active %}active{% endif %}"><a href="{{ link.url }}">{{ link.title }}</a>
-            <div class="submenu-main">
+            {% if link.links != blank %}
+              {% for childlink in link.links %}
+                <div class="submenu-main">
               <div class="submenu-toggle-click">
                 <h5>Titelist 
                   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-caret" viewBox="0 0 10 6">
@@ -116,6 +118,9 @@
                 </ul>
               </div>
             </div>
+              {% endfor %}
+            {% endif %}
+            
           </li>
           {% endfor %}
         </ul>
