@@ -1838,6 +1838,15 @@ footer {
 .brand-logo {
     width: 100%;
 }  
+
+  .performance-gloves.symmetry h2 {
+    font-size: 30px;
+}
+
+.performance-gloves.symmetry h3 {
+    font-size: 15px;
+}
+  
 }
 @media screen and (max-width:767px){
   .announcment-bar-flex {
