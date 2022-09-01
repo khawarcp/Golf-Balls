@@ -6,7 +6,7 @@ $(document).ready(function(){
     $(this).toggleClass("active");
   });
   $('#FacetsWrapperDesktop details').attr('open','');
-  $('.submenu-toggle-click.has-submenu>h5>a').click(function (e) {
+  $('.submenu-toggle-click.has-submenu>h5').click(function (e) {
       $(this).parent().find('.sub-menu').slideToggle();
       $(this).parent().siblings().children().next().slideUp();
       return false;
