@@ -118,15 +118,15 @@
       "type": "index-collections",
       "settings": {
         "collection_1_image": "shopify:\/\/shop_images\/performance-glove.png",
-        "heading_1_text": "GLOVES",
-        "subheading_1_text": "PERFORMANCE",
+        "heading_1_text": "popular",
+        "subheading_1_text": "use golf balls",
         "button_1_text": "VIEW GLOVES",
         "button_1_url": "shopify:\/\/collections\/accessories",
         "collection_2_image": "shopify:\/\/shop_images\/divot-tools.png",
-        "heading_2_text": "DIVOT TOOLS",
+        "heading_2_text": "New <br> Arrival",
         "button_2_url": "",
         "collection_3_image": "shopify:\/\/shop_images\/shop-tees.png",
-        "heading_3_text": "SHOP TEES",
+        "heading_3_text": "Last <br> Chance",
         "button_3_url": "shopify:\/\/products\/tees"
       }
     },
