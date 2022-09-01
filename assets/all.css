@@ -1547,9 +1547,10 @@ ul.sub-menu {
     flex-direction: column;
 }
 
-/* .performance-gloves.symmetry h2, .performance-gloves.symmetry h3 {
-    color: white;
-} */
+.performance-gloves.symmetry h2, .performance-gloves.symmetry h3 {
+/*     color: white; */
+    text-transform: upperase;
+}
 
 @media screen and (min-width:1400px){
     .container{
