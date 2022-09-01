@@ -1463,6 +1463,63 @@ h1.main-page-title.page-title.h0 {
 .submenu-main {
     display: none;
 }
+
+.navigation>ul>li:hover .submenu-main {
+    visibility: visible;
+    opacity: 1;
+}
+
+.submenu-main {
+    position: absolute;
+    display: block;
+    top: 100%;
+    padding: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    right: 0px;
+    min-width: 220px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
+}
+
+.navigation>ul>li {
+    position: relative;
+    padding: 10px 0px;
+}
+
+header {
+    position: relative;
+    z-index: 999;
+}
+
+.submenu-toggle-click>h5>a {
+    display: block;
+    margin: 0px !important;
+    /* padding: 10px 0px; */
+}
+
+.submenu-toggle-click>h5 {
+    position: relative;
+    padding: 10px 0px;
+}
+
+.submenu-toggle-click>h5 svg {
+    position: absolute;
+    right: 0px;
+    width: 15px;
+    top: 0px;
+    bottom: 0px;
+    z-index: -1;
+    margin: auto;
+}
+
+ul.sub-menu {
+    flex-direction: column;
+    display: none;
+}
+
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
