@@ -211,7 +211,8 @@
           "menu_2": "SERVICE",
           "menu_2_links": "footer",
           "menu_3": "WHOLESALE",
-          "menu_3_links": "wholesale"
+          "menu_3_links": "wholesale",
+          "payment_enable": true
         }
       },
       "index-newsletter": {
