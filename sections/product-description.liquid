@@ -4,8 +4,14 @@
     <li data-cont=".two">Product Reviews</li>
   </ul>
   <div class="content">
-    <div class="one">Content 1</div>
-    <div class="two">Content 2</div>
+     {% for block in section.blocks %} 
+       {%- case block.type -%}
+         {%- when '@app' -%}
+            <div class="two"> {% render block %} </div>
+         {%- when '@app' -%}
+            <div class="two">Content 2</div>
+        {%- endcase -%}
+    {% endfor %}
   </div>
 </div>
 
