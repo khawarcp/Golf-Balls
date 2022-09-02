@@ -1592,7 +1592,7 @@ ul.sub-menu {
 }
 
 .buy-quantity-wrapper .product-form {
-    margin: 0;
+    margin: 0 !important;
 }
 
 .buy-quantity-wrapper .product-form__buttons.count-add-to-cart button {
