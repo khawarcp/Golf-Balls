@@ -1647,7 +1647,7 @@ a.continue {
 }
 
 .cart__blocks {
-    width: 430px;
+    width: 430px !important;
 }
 
 a.continue {
