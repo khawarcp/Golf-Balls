@@ -109,6 +109,26 @@
 .content > div:not(:first-child) {
   display: none;
 }
+
+  ul.tabs li {
+    border: 1px solid #ddd;
+    font-weight: bold;
+    color: #3e3e3e;
+}
+
+.content {
+    border: 1px solid #ddd;
+}
+
+.tabs li.active {
+    color: #047835;
+    font-weight: bold;
+}
+
+section.product-description {
+    margin-bottom: 60px;
+}
+  
 {% endstylesheet %}
 {% javascript %}
 let tabs = document.querySelectorAll(".tabs li");
