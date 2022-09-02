@@ -1797,7 +1797,9 @@ ul#product-grid {
     width: 100%;
     height: 250px;
 }
-  
+.brand-logo {
+    width: 100%;
+}  
 }
 @media screen and (max-width:991px){
   .home-text {
