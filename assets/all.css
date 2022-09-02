@@ -1631,7 +1631,21 @@ ul.sub-menu {
 .our-brands-row .owl-nav button.owl-next span {
     color: #3e3e3e;
 }
+a.continue {
+    width: 100%;
+    margin-top: 1rem;
+    background: #ddd;
+    padding: 5px;
+    color: #262626 !important;
+    border: transparent;
+    text-transform: uppercase;
+}
 
+@media screen and (min-width: 750px)
+.cart__footer>* {
+    width: 45rem;
+}
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
