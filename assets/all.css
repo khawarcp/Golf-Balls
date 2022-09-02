@@ -510,6 +510,8 @@ span.sale-product {
     top: 22px;
 }
 
+
+
 .count-add-to-cart input {
     width: 40px;
     border: 1px solid#e3e3e3;
@@ -1574,6 +1576,10 @@ ul.sub-menu {
 
 .performance-gloves h3 {
     font-size: 18px;
+}
+
+.template-product .count-add-to-cart{
+  position:static;
 }
 
 @media screen and (min-width:1400px){
