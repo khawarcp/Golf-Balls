@@ -2403,5 +2403,14 @@ button#checkout {
 
 a.continue {
     padding: 10px 0px;
+}
+.our-brands-row .owl-nav {
+    left: -12%;
+    transform: translate(-50%);
+    top: 9px;
+}
+
+.our-brands {
+    padding: 25px 0px;
 }  
 }
