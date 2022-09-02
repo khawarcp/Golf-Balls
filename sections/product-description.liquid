@@ -3,7 +3,12 @@
       <ul class="tabs">
       <li class="active" data-cont=".one">Product Description</li>
       <li data-cont=".two">Product Reviews</li>
-      <li data-cont=".three">Product Reviews</li>  
+     {% for block in section.blocks %}
+        {%- case block.type -%}        
+           {%- when 'text' -%}
+            <li data-cont=".three">Product Reviews</li>  
+          {% endcase %}
+      {% endfor %}
     </ul>
     <div class="content">
        {% for block in section.blocks %} 
