@@ -1581,7 +1581,28 @@ ul.sub-menu {
 .template-product .count-add-to-cart{
   position:static;
 }
+.buy-quantity-wrapper {
+    display: flex;
+}
 
+.buy-quantity-wrapper .product-form__input.product-form__quantity.quant-btn {
+    flex: 0 0 50%;
+    max-width: 50%;
+    border: 0px;
+}
+
+.buy-quantity-wrapper .product-form {
+    margin: 0;
+}
+
+.buy-quantity-wrapper .product-form__buttons.count-add-to-cart button {
+    padding: 11.5px 0px;
+    width: 100%;
+}
+
+.buy-quantity-wrapper .buy-btn {
+    width: 50%;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
