@@ -1799,6 +1799,9 @@ ul#product-grid {
 }
 .brand-logo {
     width: 100%;
+}
+.our-brands-row .owl-nav {
+    left: -45px;
 }  
 }
 @media screen and (max-width:991px){
