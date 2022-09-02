@@ -72,6 +72,16 @@
     },
     "description": {
       "type": "product-description",
+      "blocks": {
+        "836f610c-85ab-40a9-9454-b54b04601641": {
+          "type": "description",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "836f610c-85ab-40a9-9454-b54b04601641"
+      ],
       "settings": {
       }
     },
