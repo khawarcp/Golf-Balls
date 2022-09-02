@@ -8,8 +8,8 @@
        {%- case block.type -%}
          {%- when '@app' -%}
             <div class="two"> {% render block %} </div>
-         {%- when '@app' -%}
-            <div class="two">Content 2</div>
+         {%- when 'description' -%}
+            <div class="two">{{ product.description }}</div>
         {%- endcase -%}
     {% endfor %}
   </div>
