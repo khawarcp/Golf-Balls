@@ -5,11 +5,11 @@
   </ul>
   <div class="content">
      {% for block in section.blocks %} 
-       {%- case block.type -%}
-         {%- when '@app' -%}
-            <div class="one"> {% render block %} </div>
+       {%- case block.type -%}        
          {%- when 'description' -%}
-            <div class="two">{{ product.description }}</div>
+            <div class="one">{{ product.description }}</div>
+          {%- when '@app' -%}
+            <div class="two"> {% render block %} </div>
         {%- endcase -%}
     {% endfor %}
   </div>
