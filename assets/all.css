@@ -492,11 +492,17 @@ h5 {
 
 span.sale-product {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 0px;
+    right: 0px;
     width: 38px;
     z-index: 9;
 }
+
+.template-collection span.sale-product {
+    top: 10px;
+    right: 10px;
+}
+
 .count-add-to-cart {
     display: flex;
     justify-content: center;
