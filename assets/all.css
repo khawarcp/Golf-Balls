@@ -1943,7 +1943,11 @@ footer {
 .performance-gloves.symmetry h3 {
     font-size: 15px;
 }
-  
+.our-brands-row .owl-nav {
+    left: 65%;
+    transform: translate(-50%, 0);
+    top: -43px;
+}  
 }
 @media screen and (max-width:767px){
   .announcment-bar-flex {
