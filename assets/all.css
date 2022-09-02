@@ -1871,8 +1871,6 @@ h4 {
     margin-bottom: 19px;
 }
 
-.newsletter-title-col {}
-
 .footer-row {
     flex-wrap: wrap;
 }
@@ -1958,7 +1956,12 @@ footer {
   .performance-gloves.symmetry {
     width: 32%;
   }
-  
+
+  .our-brands-row .owl-nav {
+    left: 65%;
+    transform: translate(-50%, 0);
+    top: -43px;
+}
   
 }
 @media screen and (max-width:767px){
