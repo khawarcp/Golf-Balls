@@ -1640,7 +1640,21 @@ a.continue {
     border: transparent;
     text-transform: uppercase;
 }
+.cart__ctas {
+    max-width: 100%;
+    width: 100%;
+    min-width: 100%;
+}
 
+.cart__blocks {
+    width: 430px;
+}
+
+a.continue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 @media screen and (min-width: 750px)
 .cart__footer>* {
     width: 45rem;
