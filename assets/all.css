@@ -1603,6 +1603,9 @@ ul.sub-menu {
 .buy-quantity-wrapper .buy-btn {
     width: 50%;
 }
+.product-description ul.tabs li {
+    border-bottom: 0px;
+}
 @media screen and (min-width:1400px){
     .container{
         max-width: 1140px;
