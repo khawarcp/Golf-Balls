@@ -1943,6 +1943,14 @@ footer {
 .performance-gloves.symmetry h3 {
     font-size: 15px;
 }
+  .buy-quantity-wrapper {
+    flex-direction: column;
+}
+
+.buy-quantity-wrapper .buy-btn {
+    width: 100%;
+}
+
   
 }
 @media screen and (max-width:767px){
