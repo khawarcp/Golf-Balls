@@ -1655,6 +1655,7 @@ a.continue {
     align-items: center;
     justify-content: center;
 }
+
 @media screen and (min-width: 750px)
 .cart__footer>* {
     width: 45rem;
@@ -2380,5 +2381,16 @@ span.sale-product {
 .performance-gloves.symmetry h3 {
     font-size: 18px;
 }
-  
+.cart__blocks {
+    width: 100% !important;
+}
+
+button#checkout {
+    width: 100%;
+    max-width: 100%;
+}
+
+a.continue {
+    padding: 10px 0px;
+}  
 }
