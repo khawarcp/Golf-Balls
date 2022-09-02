@@ -1,19 +1,21 @@
-<div class="container">
-    <ul class="tabs">
-    <li class="active" data-cont=".one">Product Description</li>
-    <li data-cont=".two">Product Reviews</li>
-  </ul>
-  <div class="content">
-     {% for block in section.blocks %} 
-       {%- case block.type -%}        
-         {%- when 'description' -%}
-            <div class="one">{{ product.description }}</div>
-          {%- when '@app' -%}
-            <div class="two"> {% render block %} </div>
-        {%- endcase -%}
-    {% endfor %}
+<section class="product-description">
+    <div class="container">
+      <ul class="tabs">
+      <li class="active" data-cont=".one">Product Description</li>
+      <li data-cont=".two">Product Reviews</li>
+    </ul>
+    <div class="content">
+       {% for block in section.blocks %} 
+         {%- case block.type -%}        
+           {%- when 'description' -%}
+              <div class="one">{{ product.description }}</div>
+            {%- when '@app' -%}
+              <div class="two"> {% render block %} </div>
+          {%- endcase -%}
+      {% endfor %}
+    </div>
   </div>
-</div>
+</section>
 
 
 {% schema %}
