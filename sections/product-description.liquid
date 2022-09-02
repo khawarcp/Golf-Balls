@@ -9,7 +9,7 @@
          {%- when 'description' -%}
             <div class="one">{{ product.description }}</div>
           {%- when '@app' -%}
-            <div class="two"> {% render 'judgeme_widgets', widget_type: 'judgeme_preview_badge', jm_style: '', concierge_install: false, product: product %} </div>
+            <div class="two"> {% render block %} </div>
         {%- endcase -%}
     {% endfor %}
   </div>
