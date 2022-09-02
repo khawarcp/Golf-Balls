@@ -228,7 +228,8 @@
 
     <link rel="stylesheet" href="{{ 'all.css' | asset_url }}">
     
-  </head>
+    {% render 'judgeme_core' %}
+</head>
 
   <body class="gradient template-{{ request.page_type | handle }} {{ collection.handle }}">
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
