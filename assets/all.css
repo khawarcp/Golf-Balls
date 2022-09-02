@@ -1955,6 +1955,9 @@ footer {
     width: 100%;
 }
 
+  .performance-gloves.symmetry {
+    width: 32%;
+  }
   
 }
 @media screen and (max-width:767px){
