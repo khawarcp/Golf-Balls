@@ -1947,6 +1947,13 @@ footer {
     left: 65%;
     transform: translate(-50%, 0);
     top: -43px;
+}
+.buy-quantity-wrapper {
+    flex-direction: column;
+}
+
+.buy-quantity-wrapper .buy-btn {
+    width: 100%;
 }  
 }
 @media screen and (max-width:767px){
