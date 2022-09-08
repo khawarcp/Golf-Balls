@@ -27,10 +27,18 @@
       ],
       "settings": {
       }
+    },
+    "16626336957c169660": {
+      "type": "index-featured-collection",
+      "settings": {
+        "heading": "Featured Collection",
+        "golf_collection": "accessories"
+      }
     }
   },
   "order": [
     "cart-items",
-    "cart-footer"
+    "cart-footer",
+    "16626336957c169660"
   ]
 }
