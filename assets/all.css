@@ -1682,7 +1682,7 @@ button#checkout {
     text-align: left;
 }
 .cart-item cart-remove-button {
-    margin: 4px 10px;
+    margin: 4px 10px !important;
 }
 @media screen and (min-width: 750px){
 .cart__footer>* {
