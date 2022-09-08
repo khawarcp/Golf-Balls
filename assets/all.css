@@ -1681,6 +1681,9 @@ button#checkout {
 .template-cart .featured-products h3 {
     text-align: left;
 }
+.cart-item cart-remove-button {
+    margin: 4px 10px;
+}
 @media screen and (min-width: 750px){
 .cart__footer>* {
     width: 45rem;
