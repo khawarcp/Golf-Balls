@@ -71,7 +71,7 @@
 </div>
 {% endunless %}
 
- {% for variant in card_product.variants.options[0] limit: 3 %}
- <h1> {{ variant[forloop.index0] }} </h1>
+ {% for variant in card_product.variants[1].options[0] limit: 3 %}
+ <h1> {{ variant }} </h1>
  {% endfor %}
 
