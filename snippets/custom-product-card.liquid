@@ -18,7 +18,7 @@
             <form method="post" action="/cart/add">
               <input type="hidden" name="id" value="{{ card_product.variants.first.id }}" />
               {%- for option in card_product.options_with_values -%}
-                <h1>{{ card_product |json }}</h1>
+
               {%- for value in option.values limit:3 -%}
 
                 {% if card_product.variants[forloop.index0].inventory_quantity > 0  %}
@@ -69,4 +69,4 @@
     {% unless template contains 'collection' or template contains 'search' %}   
 </div>
 {% endunless %}
-
+      <h1>{{ card_product |json }}</h1>
