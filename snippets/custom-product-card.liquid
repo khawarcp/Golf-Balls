@@ -79,6 +79,6 @@
  {% endfor %}
  {% for variant in card_product.variants[0].options[0] %}
     <h1> {{ variant }} {{ used }} </h1>
-{% assign used = used | plus :1 %} 
+{% assign used = used | plus : 1 %} 
     {% endfor %}
 
