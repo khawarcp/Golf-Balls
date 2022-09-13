@@ -1703,6 +1703,10 @@ button#checkout {
     padding: 0 10px;
 }
 
+.product-description ul.tabs li:hover {
+    background-color: #cbcbcb;
+    color: #3e3e3e;
+}
 
 @media screen and (min-width: 750px){
 .cart__footer>* {
