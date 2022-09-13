@@ -109,19 +109,24 @@
     border: 1px solid #ddd;
     font-weight: bold;
     color: #3e3e3e;
-   background-color: #cbcbcb;
+   background-color: transparent;
 }
 
 
 .product-description .tabs li.active {
     color: #047835;
     font-weight: bold;
-  background-color: transparent;
+  background-color:  #cbcbcb;
 }
 
 section.product-description {
     margin-bottom: 60px;
 }
+
+.product-description ul.tabs li:hover {
+    background-color: #cbcbcb;
+    color: #3e3e3e;
+}  
 
 @media screen and (max-width : 767px){
   .product-description ul.tabs li {
