@@ -77,21 +77,21 @@
           "type": "brand",
           "settings": {
             "brand_image": "shopify:\/\/shop_images\/our-brand-img2.png",
-            "brand_url": ""
+            "brand_url": "https:\/\/www.callawaygolf.com\/"
           }
         },
         "1855ef54-f4b6-4999-8c92-ee110184b090": {
           "type": "brand",
           "settings": {
             "brand_image": "shopify:\/\/shop_images\/taylor-made-logo-vector.png",
-            "brand_url": ""
+            "brand_url": "https:\/\/www.taylormadegolf.com\/"
           }
         },
         "9ed6f1da-b3d2-4f1a-bf51-9ec2b3e58131": {
           "type": "brand",
           "settings": {
             "brand_image": "shopify:\/\/shop_images\/our-brand-img4.png",
-            "brand_url": ""
+            "brand_url": "https:\/\/www.bridgestonegolf.com\/"
           }
         },
         "af4176ac-959f-4cf6-9380-69187fb52b88": {
@@ -119,7 +119,7 @@
           "type": "brand",
           "settings": {
             "brand_image": "shopify:\/\/shop_images\/our-brand-img4.png",
-            "brand_url": ""
+            "brand_url": "https:\/\/www.bridgestonegolf.com\/"
           }
         }
       },
