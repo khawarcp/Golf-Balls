@@ -72,9 +72,9 @@
 {% endunless %}
 {% assign check = 0 %}
 {% assign used = 0 %}
- {% for options in card_product.options[0] %} 
+ {% for option in card_product.options[0] %} 
 
- {% for value in options.variants %}
+ {% for value in option.variants[0] %}
     <h1> {{ value }} </h1>
     {% endfor %}
     
