@@ -94,13 +94,6 @@
             "brand_url": ""
           }
         },
-        "60043477-c3cc-49bb-a12c-5a7f6698cfc0": {
-          "type": "brand",
-          "settings": {
-            "brand_image": "shopify:\/\/shop_images\/our-brand-img5.png",
-            "brand_url": ""
-          }
-        },
         "af4176ac-959f-4cf6-9380-69187fb52b88": {
           "type": "brand",
           "settings": {
@@ -112,6 +105,13 @@
           "type": "brand",
           "settings": {
             "brand_image": "shopify:\/\/shop_images\/our-brand-img1.png",
+            "brand_url": ""
+          }
+        },
+        "60043477-c3cc-49bb-a12c-5a7f6698cfc0": {
+          "type": "brand",
+          "settings": {
+            "brand_image": "shopify:\/\/shop_images\/our-brand-img5.png",
             "brand_url": ""
           }
         },
@@ -128,9 +128,9 @@
         "c219af3f-7f4a-44ec-a913-93ef0f202011",
         "1855ef54-f4b6-4999-8c92-ee110184b090",
         "9ed6f1da-b3d2-4f1a-bf51-9ec2b3e58131",
-        "60043477-c3cc-49bb-a12c-5a7f6698cfc0",
         "af4176ac-959f-4cf6-9380-69187fb52b88",
         "27a2f161-788f-4bb5-a031-d41450506a91",
+        "60043477-c3cc-49bb-a12c-5a7f6698cfc0",
         "93e09d0c-ce8f-4974-baa8-20c5e9f4d46f"
       ],
       "settings": {
