@@ -70,8 +70,9 @@
     {% unless template contains 'collection' or template contains 'search' %}   
 </div>
 {% endunless %}
-
- {% for variant in card_product.variants[1].options[0] limit: 3 %}
+{% assign check = 0 %}
+{% assign used = 0 %}
+ {% for variant in card_product.variants.options %}
  <h1> {{ variant }} </h1>
  {% endfor %}
 
