@@ -74,5 +74,8 @@
 {% assign used = 0 %}
  {% for variant in card_product.variants[check].options[0] %}
  <h1> {{ variant }} </h1>
+
+{% assign check = check | plus: 1 %}
+{% assign used = used | plus: 1 %}
  {% endfor %}
 
