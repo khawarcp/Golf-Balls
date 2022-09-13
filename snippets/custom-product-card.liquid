@@ -18,7 +18,7 @@
             <form method="post" action="/cart/add">
               <input type="hidden" name="id" value="{{ card_product.variants.first.id }}" />
               {%- for option in card_product.options_with_values -%}
-                {% if product_card_product.options[0] == "Size" %}
+                {% if card_product.options[0] == "Size" %}
               {%- for value in option.values limit:3 -%}
                 {% if card_product.variants[forloop.index0].inventory_quantity > 0  %}
                 <div class="input-price-row">
