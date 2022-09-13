@@ -18,8 +18,9 @@
             <form method="post" action="/cart/add">
               <input type="hidden" name="id" value="{{ card_product.variants.first.id }}" />
               {%- for option in card_product.options_with_values -%}
+              {% if option.name == 'Size' %}
               {%- for value in option.values limit:3 -%}
-                <h1>{{ option[0].values }}</h1>
+                <h1>{{ option.values }}</h1>
                 {% if card_product.variants[forloop.index0].inventory_quantity > 0  %}
                 <div class="input-price-row">
                     <div class="radio-container">
@@ -42,6 +43,7 @@
                 </div>
               {% endif %}
 				{%- endfor -%}	
+              {% endif %}
               {%- endfor -%}
               
                 <div class="count-add-to-cart">
