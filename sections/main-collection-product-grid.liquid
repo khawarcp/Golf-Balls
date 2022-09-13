@@ -171,11 +171,6 @@
   </div>
 </div>
 
-{% for option in product.options_with_values %}
-              {%- for value in option.values -%}
-                <h1> {{ value }}</h1>
-                {% endfor %}
-  {% endfor %}
 
 {% schema %}
 {
