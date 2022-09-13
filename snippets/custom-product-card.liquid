@@ -20,7 +20,7 @@
               {%- for option in card_product.options_with_values -%}
               {%- for value in option.values -%}
 
-              <h1> {{ card_product.variants[forloop.index0] }} </h1>
+              <h1> {{ card_product.variants[forloop.index0].title }} </h1>
                 
                 {% if card_product.variants[forloop.index0].inventory_quantity > 0  %}
                 <div class="input-price-row">
