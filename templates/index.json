@@ -70,7 +70,7 @@
           "type": "brand",
           "settings": {
             "brand_image": "shopify:\/\/shop_images\/our-brand-img1.png",
-            "brand_url": "https:\/\/www.titleist.com\/"
+            "brand_url": "shopify:\/\/collections\/titleist"
           }
         },
         "c219af3f-7f4a-44ec-a913-93ef0f202011": {
@@ -105,7 +105,7 @@
           "type": "brand",
           "settings": {
             "brand_image": "shopify:\/\/shop_images\/our-brand-img1.png",
-            "brand_url": "https:\/\/www.titleist.com\/"
+            "brand_url": "shopify:\/\/collections\/titleist"
           }
         },
         "60043477-c3cc-49bb-a12c-5a7f6698cfc0": {
