@@ -70,15 +70,5 @@
     {% unless template contains 'collection' or template contains 'search' %}   
 </div>
 {% endunless %}
-{% assign check = 0 %}
-{% assign used = 0 %}
- {% for option in card_product.options[0] %} 
- <h1> {{ option }} </h1>
 
-    
- {% endfor %}
- {% for variant in card_product.variants[0].options[0] %}
-    <h1> {{ variant }} {{ used }} </h1>
-{% assign used = used | plus : 1 %} 
-    {% endfor %}
 
