@@ -17,8 +17,8 @@
             <span> {{ card_product.metafields.descriptors.subtitle }} </span>            
             <form method="post" action="/cart/add">
               <input type="hidden" name="id" value="{{ card_product.variants.first.id }}" />
-
-              {%- for value in card_product.variants[0] -%}
+              {%- for option in card_product.options_with_values -%}
+              {%- for value in option.values -%}
 
                 {% if card_product.variants[forloop.index0].inventory_quantity > 0  %}
                 <div class="input-price-row">
@@ -43,7 +43,7 @@
               {% endif %}
 				{%- endfor -%}	
 
-   
+              {%- endfor -%}
               
                 <div class="count-add-to-cart">
                     <p class="quantity-error"></p>
