@@ -70,5 +70,9 @@
     {% unless template contains 'collection' or template contains 'search' %}   
 </div>
 {% endunless %}
-
+{% assign check = 0 %}
+{% assign used = 0 %}
+ {% for option in card_product.options_with_values %} 
+ <h1> {{ option }} </h1>
+ {% endfor %}
 
