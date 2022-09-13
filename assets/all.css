@@ -1703,6 +1703,10 @@ button#checkout {
     padding: 0 10px;
 }
 
+.navigation>ul>li:hover {
+    background: #dddddd;
+}
+
 @media screen and (min-width: 750px){
 .cart__footer>* {
     width: 45rem;
