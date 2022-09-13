@@ -77,8 +77,8 @@
 
     
  {% endfor %}
- {% for variant in card_product.variants[0].options1 %}
-    <h1> {{ variant }} </h1>
-    {% capture used %}{{ used }} {{ variant.option1 }}{% endcapture %}
+ {% for variant in card_product.variants[0].options[0] %}
+    <h1> {{ variant }} {{ used }} </h1>
+    {% capture used %}{% assign used = used | plus :1 %} {{ variant.option1 }}{% endcapture %}
     {% endfor %}
 
