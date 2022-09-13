@@ -1684,6 +1684,26 @@ button#checkout {
 .cart-item cart-remove-button {
     margin: 4px 10px !important;
 }
+
+/*********************/
+.navigation li.active {
+    background: #dddddd;
+}
+
+.navigation>ul>li {
+    padding: 5px 0;
+}
+
+.navigation ul li.active>a {
+    border-bottom: 0;
+}
+
+.navigation ul li a {
+    margin-right: 0;
+    padding: 0 10px;
+}
+
+
 @media screen and (min-width: 750px){
 .cart__footer>* {
     width: 45rem;
