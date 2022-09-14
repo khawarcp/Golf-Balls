@@ -76,7 +76,7 @@ $('.card-submit-access').on('click',function(e){
         formSub.submit();
     }
 });
-if ($(window).width() < 767) {
+if ($(window).width() < 1199) {
       $('.navigation>ul>li>a').click(function (e) {
       $(this).parent().find('.submenu-main').slideToggle();
       $(this).parent().siblings().children().next().slideUp();
