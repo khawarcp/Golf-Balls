@@ -1876,6 +1876,9 @@ ul.sub-menu li a {
 }
 .submenu-toggle-click  h5 a {
     color: #000 !important;
+}
+ul.sub-menu {
+    display: none;
 }  
 }
 @media screen and (max-width:991px){
