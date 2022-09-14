@@ -2554,5 +2554,8 @@ aside#main-collection-filters {
 }
 .active-filter {
     z-index: 0 !important;
+}
+.facets-container a.active-facets__button-remove.underlined-link {
+    position: relative;
 }  
 }
