@@ -1860,6 +1860,11 @@ ul#product-grid {
 }
 .our-brands-row .owl-nav {
     left: -45px;
+}
+.submenu-main {
+    left: 0px;
+    position: relative;
+    display: none;
 }  
 }
 @media screen and (max-width:991px){
