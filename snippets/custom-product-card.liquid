@@ -19,13 +19,13 @@
             <form method="post" action="/cart/add">
               <input type="hidden" name="id" value="{{ card_product.variants.first.id }}" />
             
-        
+         {% if template != 'cart' %}
             {%- for option in card_product.options_with_values -%}
               {%- for value in option.values limit:3 -%}
 
              
 
-               {% if template != 'cart' %}
+              
                 {% if card_product.variants[forloop.index0].inventory_quantity > 0  %}
                  
                 <div class="input-price-row">
@@ -49,12 +49,13 @@
                     </div>
                 </div>
               {% endif %}
-                 {% else %}
-                   {%- render 'price', product: card_product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
-                 {% endif %}
+                
 				{%- endfor -%}	
 
               {%- endfor -%}
+               {% else %}
+                   {%- render 'price', product: card_product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
+                 {% endif %}
     
              
 
