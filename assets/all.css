@@ -1712,6 +1712,9 @@ li.has-menu>svg {
     width: 10px;
     display: none;
 }
+.submenu-toggle-click>h5.active {
+    background-color: #dddddd;
+}
 @media screen and (min-width: 750px){
 .cart__footer>* {
     width: 45rem;
