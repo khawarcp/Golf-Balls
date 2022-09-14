@@ -4,6 +4,7 @@ $(document).ready(function(){
     $(".navigation").toggleClass("display");
     $("body").toggleClass("overflow");
     $(this).toggleClass("active");
+    $("aside#main-collection-filters").toggleClass("active-filter");
   });
   $('#FacetsWrapperDesktop details').attr('open','');
   $('.submenu-toggle-click.has-submenu>h5').click(function (e) {
