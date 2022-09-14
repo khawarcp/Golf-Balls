@@ -19,13 +19,14 @@
             <form method="post" action="/cart/add">
               <input type="hidden" name="id" value="{{ card_product.variants.first.id }}" />
             
-  {% unless template contains 'cart' %}
+        
             {%- for option in card_product.options_with_values -%}
               {%- for value in option.values limit:3 -%}
 
              
                 
                 {% if card_product.variants[forloop.index0].inventory_quantity > 0  %}
+                  {% unless template contains 'cart' %}
                 <div class="input-price-row">
                     <div class="radio-container">
                         <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}-{{ current_variant.id }}">
@@ -40,6 +41,7 @@
                             {{ value }}
                         </label>
                     </div>
+                   {% endunless %}
                     <div class="fearured-price">
                         <h6 class="{% if current_variant.compare_at_price > 0 %}del-price{% endif %}"> {{ card_product.variants[forloop.index0].compare_at_price | money }} </h6>
                         <h6 class="discount-price"> {{ card_product.variants[forloop.index0].price | money }} </h6>
@@ -50,13 +52,8 @@
 
               {%- endfor -%}
     
-              {% endunless %}
+             
 
-
-               <div class="fearured-price">
-                        <h6 class="{% if current_variant.compare_at_price > 0 %}del-price{% endif %}"> {{ card_product.variants[forloop.index0].compare_at_price | money }} </h6>
-                        <h6 class="discount-price"> {{ card_product.variants[forloop.index0].price | money }} </h6>
-                    </div>
               
                 <div class="count-add-to-cart">
                     <p class="quantity-error"></p>
