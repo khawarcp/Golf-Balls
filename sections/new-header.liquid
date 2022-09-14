@@ -90,7 +90,7 @@
                    {% if childlink.links != blank %}
                    <ul class="sub-menu">
                      {% for grandchild in childlink.links %}
-                 <li><a href="{{ grandchild.url }}"> {{ grandchild.title }} </a></li>
+                 <li {% if childlink.active %}active{% endif %}><a href="{{ grandchild.url }}"> {{ grandchild.title }} </a></li>
                        {% endfor %}
                 </ul>
                      {% endif %}
