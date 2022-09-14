@@ -1931,6 +1931,7 @@ li.has-menu>svg {
     right: 20px;
     top: 17px;
     width: 13px;
+  z-index: -1;
 }  
 }
 @media screen and (max-width:991px){
