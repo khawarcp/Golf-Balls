@@ -54,7 +54,9 @@
 
               {%- endfor -%}
                {% else %}
+           <div class="fearured-price">
                    {%- render 'price', product: card_product, use_variant: true, show_badges: true, price_class: 'price--large' -%}
+           </div>
                  {% endif %}
     
              
