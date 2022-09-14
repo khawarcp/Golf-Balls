@@ -1866,6 +1866,13 @@ ul#product-grid {
     left: 0px;
     position: relative;
     display: none;
+} 
+ul.sub-menu li a {
+    color: #000;
+}
+
+.submenu-toggle-click.has-submenu h5 a {
+    color: #000;
 }  
 }
 @media screen and (max-width:991px){
