@@ -1886,6 +1886,13 @@ ul.sub-menu {
 
 .navigation li.active {
     background-color: transparent;
+}
+.navigation ul li.active>a {
+    color: #fff;
+}
+
+.navigation>ul>li:hover {
+    background-color: transparent;
 }  
 }
 @media screen and (max-width:991px){
