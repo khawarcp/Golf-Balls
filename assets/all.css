@@ -1893,6 +1893,14 @@ ul.sub-menu {
 
 .navigation>ul>li:hover {
     background-color: transparent;
+}
+li.has-menu {
+    display: flex;
+}
+
+li.has-menu>svg {
+    width: 10px;
+    display: none;
 }  
 }
 @media screen and (max-width:991px){
