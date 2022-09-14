@@ -1879,6 +1879,13 @@ ul.sub-menu li a {
 }
 ul.sub-menu {
     display: none;
+}
+.navigation ul li.active>a {
+    background-color: transparent;
+}
+
+.navigation li.active {
+    background-color: transparent;
 }  
 }
 @media screen and (max-width:991px){
