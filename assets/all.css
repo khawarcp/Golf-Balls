@@ -1518,7 +1518,7 @@ header {
     width: 15px;
     top: 0px;
     bottom: 0px;
-    z-index: -1;
+    z-index: 999;
     margin: auto;
 }
 
