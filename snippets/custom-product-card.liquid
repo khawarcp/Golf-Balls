@@ -24,8 +24,9 @@
               {%- for value in option.values limit:3 -%}
 
              
-                
+                 {% if template != 'cart' %}
                 {% if card_product.variants[forloop.index0].inventory_quantity > 0  %}
+                 
                 <div class="input-price-row">
                     <div class="radio-container">
                         <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}-{{ current_variant.id }}">
@@ -39,7 +40,8 @@
                                    >
                             {{ value }}
                         </label>
-                    </div>                                       
+                    </div>     
+                  {% endif %}
                     <div class="fearured-price">
                         <h6 class="{% if current_variant.compare_at_price > 0 %}del-price{% endif %}"> {{ card_product.variants[forloop.index0].compare_at_price | money }} </h6>
                         <h6 class="discount-price"> {{ card_product.variants[forloop.index0].price | money }} </h6>
