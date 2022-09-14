@@ -77,7 +77,7 @@ $('.card-submit-access').on('click',function(e){
     }
 });
 if ($(window).width() < 1199) {
-      $('.navigation>ul>li>a').click(function (e) {
+      $('.navigation>ul>li.has-menu>a').click(function (e) {
       $(this).parent().find('.submenu-main').slideToggle();
       $(this).parent().siblings().children().next().slideUp();
       return false;
