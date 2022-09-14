@@ -15,10 +15,12 @@
         <div class="featured-product-content">
              <h5> <a href="{{ card_product.url }}"> {{ card_product.title }} </a> </h5>
             <span> {{ card_product.metafields.descriptors.subtitle }} </span>     
-          {% unless template contains 'cart' %}
+
             <form method="post" action="/cart/add">
               <input type="hidden" name="id" value="{{ card_product.variants.first.id }}" />
-              {%- for option in card_product.options_with_values -%}
+            
+             {% unless template contains 'cart' %}  
+            {%- for option in card_product.options_with_values -%}
               {%- for value in option.values limit:3 -%}
 
              
@@ -47,6 +49,7 @@
 				{%- endfor -%}	
 
               {%- endfor -%}
+    {% endunless %}
               
                 <div class="count-add-to-cart">
                     <p class="quantity-error"></p>
@@ -66,7 +69,7 @@
                 </ul>
               </div>
             </form>
-          {% endunless %}
+      
         </div>
     </div>
     {% unless template contains 'collection' or template contains 'search' %}   
