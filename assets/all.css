@@ -1901,7 +1901,21 @@ ul.sub-menu {
 .navigation>ul>li:hover {
     background-color: transparent;
 }
-  
+li.has-menu>svg {
+    display: block !important;
+    position: absolute;
+    right: -18px;
+    top: 17px;
+    width: 13px;
+}
+
+li.has-menu {
+    justify-content: center;
+}
+
+li.has-menu {
+    display: block;
+}  
 }
 @media screen and (max-width:991px){
   .home-text {
