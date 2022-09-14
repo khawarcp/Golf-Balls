@@ -67,7 +67,7 @@
       <div class="navigation">
         <ul>
           {% for link in linklists[section.settings.main_menu].links %}
-          <li class="{% if link.active %}active{% endif %}"><a href="{{ link.url }}">{{ link.title }}</a>
+          <li class="{% if link.active %}active{% endif %} {% if childlink.links != blank %} has-menu {% endif %}"><a href="{{ link.url }}">{{ link.title }}</a>
             {% if link.links != blank %}
               <div class="submenu-main">
               {% for childlink in link.links %}
