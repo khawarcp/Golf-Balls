@@ -2557,5 +2557,12 @@ aside#main-collection-filters {
 }
 .facets-container a.active-facets__button-remove.underlined-link {
     position: relative;
+}
+.featured-product-col {
+    position: relative;
+}
+
+span.sale-product {
+    display: block;
 }  
 }
