@@ -2546,5 +2546,9 @@ a.continue {
 
 .our-brands {
     padding: 25px 0px;
+}
+aside#main-collection-filters {
+    position: relative;
+    z-index: 999999;
 }  
 }
