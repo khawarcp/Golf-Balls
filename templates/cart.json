@@ -32,7 +32,7 @@
       "type": "index-featured-collection",
       "settings": {
         "heading": "Don’t Forget These!",
-        "golf_collection": "golf-balls"
+        "golf_collection": "featured"
       }
     }
   },
