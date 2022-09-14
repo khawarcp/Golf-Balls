@@ -1478,19 +1478,12 @@ h1.main-page-title.page-title.h0 {
     display: none;
 }
 
-.navigation>ul>li:hover .submenu-main {
-    visibility: visible;
-    opacity: 1;
-}
 
 .submenu-main {
     position: absolute;
     display: block;
     top: 100%;
     padding: 10px;
-    visibility: hidden;
-    opacity: 0;
-    transform: translate(-50%, 0%);
     left: 50%;
     right: 0px;
     min-width: 220px;
@@ -1716,6 +1709,16 @@ button#checkout {
 .cart__footer>* {
     width: 45rem;
 }
+@media screen and (min-width:1199px){
+  .navigation>ul>li:hover .submenu-main {
+    visibility: visible;
+    opacity: 1;
+}
+.submenu-main {
+   transform: translate(-50%, 0%);
+   visibility: hidden;
+   opacity: 0;
+}  
 }
 @media screen and (min-width:1400px){
     .container{
