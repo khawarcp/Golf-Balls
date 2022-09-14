@@ -2550,5 +2550,8 @@ a.continue {
 aside#main-collection-filters {
     position: relative;
     z-index: 999999;
+}
+.active-filter {
+    z-index: 0 !important;
 }  
 }
