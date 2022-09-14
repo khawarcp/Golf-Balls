@@ -1709,6 +1709,7 @@ button#checkout {
 .cart__footer>* {
     width: 45rem;
 }
+}
 @media screen and (min-width:1199px){
   .navigation>ul>li:hover .submenu-main {
     visibility: visible;
