@@ -1704,7 +1704,14 @@ button#checkout {
     text-align: center;
     width: 100%;
 }
+li.has-menu {
+    display: flex;
+}
 
+li.has-menu>svg {
+    width: 10px;
+    display: none;
+}
 @media screen and (min-width: 750px){
 .cart__footer>* {
     width: 45rem;
@@ -1894,14 +1901,7 @@ ul.sub-menu {
 .navigation>ul>li:hover {
     background-color: transparent;
 }
-li.has-menu {
-    display: flex;
-}
-
-li.has-menu>svg {
-    width: 10px;
-    display: none;
-}  
+  
 }
 @media screen and (max-width:991px){
   .home-text {
