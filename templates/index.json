@@ -25,6 +25,7 @@
         },
         "3c2351d2-eb24-4481-9b06-300ee750f10c": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "banner_image": "shopify:\/\/shop_images\/home-banner.png",
             "logo_image": "shopify:\/\/shop_images\/titleist.png",
@@ -36,6 +37,7 @@
         },
         "6be70119-b335-4455-8290-cf9736eef3c3": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "banner_image": "shopify:\/\/shop_images\/home-banner.png",
             "logo_image": "shopify:\/\/shop_images\/titleist.png",
