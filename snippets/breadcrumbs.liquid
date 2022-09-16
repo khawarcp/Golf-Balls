@@ -14,19 +14,19 @@
 
     {% if collection.url %}
 
-      <span aria-hidden="true"> &frasl; </span>
+      <span aria-hidden="true"> &#124; </span>
 
       {{ collection.title | link_to: collection.url }}
 
     {% endif %}
 
-    <span aria-hidden="true"> &frasl; </span>
+    <span aria-hidden="true">&#124; </span>
 
     <span>{{ product.title }}</span>
 
   {% elsif template contains 'collection' and collection.handle %}
 
-    <span aria-hidden="true"> &frasl; </span>
+    <span aria-hidden="true"> &#124; </span>
 
     {% if current_tags %}
 
@@ -34,7 +34,7 @@
 
       {{ collection.title | link_to: url }}
 
-      <span aria-hidden="true"> &frasl; </span>
+      <span aria-hidden="true"> &#124; </span>
 
       <span>{{ current_tags | join: " + " }}</span>
 
@@ -46,13 +46,13 @@
 
   {% elsif template == 'blog' %}
 
-    <span aria-hidden="true"> &frasl; </span>
+    <span aria-hidden="true"> &#124; </span>
 
     {% if current_tags %}
 
       {{ blog.title | link_to: blog.url }}
 
-      <span aria-hidden="true"> &frasl; </span>
+      <span aria-hidden="true"> &#124; </span>
 
       <span>{{ current_tags | join: " + " }}</span>
 
@@ -64,17 +64,17 @@
 
   {% elsif template == 'article' %}
 
-    <span aria-hidden="true"> &frasl; </span>
+    <span aria-hidden="true"> &#124; </span>
 
     {{ blog.title | link_to: blog.url }}
 
-    <span aria-hidden="true"> &frasl; </span>
+    <span aria-hidden="true"> &#124; </span>
 
     <span>{{ article.title }}</span>
 
   {% else %}
 
-   <span aria-hidden="true"> &frasl; </span>
+   <span aria-hidden="true"> &#124; </span>
 
    <span>{{ page_title }}</span>
 
