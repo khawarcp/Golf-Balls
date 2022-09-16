@@ -17,9 +17,8 @@
           "type": "slide",
           "settings": {
             "banner_image": "shopify:\/\/shop_images\/home-banner.png",
-            "logo_image": "shopify:\/\/shop_images\/titleist.png",
-            "banner_title": "MORE SPEED.",
-            "banner_subtitle": "MORE PRECISION. MORE CONSISTENCY.",
+            "banner_title": "STOCK UP!",
+            "banner_subtitle": "SPENDING THE DAY ON THE COURSE?",
             "banner_button_text": "START SHOPPING",
             "banner_button_link": "shopify:\/\/collections\/golf-balls"
           }
