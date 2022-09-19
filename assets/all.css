@@ -1721,6 +1721,9 @@ li.has-menu>svg {
 .submenu-toggle-click>h5:hover {
     background-color: #dddddd;
 }
+.owl-carousel {
+    display: block;
+}
 @media screen and (min-width: 750px){
 .cart__footer>* {
     width: 45rem;
