@@ -77,6 +77,28 @@ $('.card-submit-access').on('click',function(e){
         formSub.submit();
     }
 });
+$('.banner-slider.owl-carousel').owlCarousel({
+            loop: false,
+            margin: 0,
+            dots: false,
+            nav: false,
+            autoplay: false,
+            autoplayTimeout: 2000,
+            smartSpeed: 800,
+            thumbs: false,
+            items: 1,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        });
 if ($(window).width() < 1199) {
       $('.navigation>ul>li.has-menu>a').click(function (e) {
       $(this).parent().find('.submenu-main').slideToggle();
