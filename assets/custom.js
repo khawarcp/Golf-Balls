@@ -77,7 +77,6 @@ $('.card-submit-access').on('click',function(e){
         formSub.submit();
     }
 });
-$(document).ready(function() {
 $('.banner-slider.owl-carousel').owlCarousel({
             loop: false,
             margin: 0,
@@ -100,7 +99,6 @@ $('.banner-slider.owl-carousel').owlCarousel({
                 }
             }
         });
-}
 if ($(window).width() < 1199) {
       $('.navigation>ul>li.has-menu>a').click(function (e) {
       $(this).parent().find('.submenu-main').slideToggle();
