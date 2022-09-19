@@ -1,6 +1,6 @@
 <div class="banner-slider owl-carousel">
   {% for block in section.blocks %}
- <div class="home-banner" loading="lazy" style="background-image: url('{{ block.settings.banner_image | img_url : 'master' }}')">
+ <section class="home-banner" loading="lazy" style="background-image: url('{{ block.settings.banner_image | img_url : 'master' }}')">
     <div class="container">
           
               <div class="home-text">
@@ -20,7 +20,7 @@
           
         </div>
 
-   </div>
+   </section>
     {% endfor %}
 </div>
 
